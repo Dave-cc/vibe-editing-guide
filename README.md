@@ -14,7 +14,7 @@ Vibe 剪辑就是用嘴剪片：你把想要的效果用人话说出来，AI 动
 
 ## 在线阅读
 
-开启 GitHub Pages 后的地址：`https://<你的用户名>.github.io/<仓库名>/`
+开启 GitHub Pages 后的地址：`https://dave-cc.github.io/vibe-editing-guide/`
 
 也可以下载整个仓库，双击 `index.html` 在本地看，不需要装任何东西。
 
