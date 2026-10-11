@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>运镜 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html"><i>02</i>景别、角度与构图</a><a href="light-color.html"><i>03</i>光与色</a><a href="camera.html" class="on"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">镜头语言</div>
+      <h1>运镜</h1>
+      <p class="lede">镜头一动，观众的身体就跟着动。这一章把常见的镜头运动一个一个认全，再讲它们用在截图、图片和动效上的“虚拟”版本，那才是 AI 剪辑里用得最多的。</p>
+      
+
+
+<h2 id="s1">镜头动，是替观众在动</h2>
+
+<p>看电影的时候，摄影机就是你的眼睛和身体。它往前走，你觉得自己在靠近；它突然转头，你觉得自己被什么吸引了；它晃，你觉得自己在跑或者在害怕。所以运镜从来不是装饰，它是在安排观众“以什么姿态”看这件事。</p>
+
+<p>这也带来了运镜的第一条规矩：<strong>动要有理由</strong>。镜头推近，是因为这里有值得凑近看的东西；镜头跟着人走，是因为人在走。理由可以是内容上的，也可以是情绪上的，但不能是“静着怕无聊”。没有理由的运动，观众会觉得晕和乱，哪怕他们说不出为什么。</p>
+
+<h2 id="s2">先分清两大类</h2>
+
+<p>所有的镜头运动，先问一个问题：摄影机这台机器本身，位置变了没有？</p>
+
+<div class="tw"><table>
+<tr><th></th><th>机位不动，只是“转头”或“变焦”</th><th>机位在空间里移动</th></tr>
+<tr><td>像什么</td><td>你站在原地，转头看、抬头看、或者眯起眼盯远处</td><td>你走过去、退开、绕着走、蹲下站起</td></tr>
+<tr><td>画面变化</td><td>背景整体平移或放大，前后景之间的相对位置不变</td><td>近处的东西移动得快，远处的移动得慢，能感觉到纵深（这叫视差）</td></tr>
+<tr><td>感觉</td><td>观察、扫视、注意力转移</td><td>进入、参与、身临其境</td></tr>
+</table></div>
+
+<p>这个区别解释了一个新手常有的困惑：同样是“放大”，为什么有的像电影，有的像监控录像？因为前者是摄影机真的走了过去（推），后者只是镜头变焦。</p>
+
+<h2 id="s3">九种基本运动</h2>
+
+<div class="tw"><table>
+<tr><th>中文</th><th>英文</th><th>机器怎么动</th><th>它在说</th></tr>
+<tr><td>固定</td><td><small>static / lock-off</small></td><td>不动</td><td>你看着就好。稳定、客观、克制，也可以是冷漠和压抑</td></tr>
+<tr><td>推</td><td><small>dolly in / push in</small></td><td>向主体靠近</td><td>注意，这很重要；我们进入他的内心</td></tr>
+<tr><td>拉</td><td><small>dolly out / pull out</small></td><td>远离主体</td><td>原来是这样；他很孤单；结束了</td></tr>
+<tr><td>变焦</td><td><small>zoom in / out</small></td><td>机器不动，镜头变焦放大或缩小</td><td>盯住、窥视；快速变焦是强调或搞笑</td></tr>
+<tr><td>摇</td><td><small>pan</small></td><td>原地水平转</td><td>从这里看到那里；跟着他的视线</td></tr>
+<tr><td>俯仰</td><td><small>tilt</small></td><td>原地上下转</td><td>打量；揭示高度；从人到天</td></tr>
+<tr><td>横移</td><td><small>truck / lateral tracking</small></td><td>平行于画面左右移动</td><td>陪着走；像卷轴一样展开一个场景</td></tr>
+<tr><td>升降</td><td><small>pedestal / crane / boom</small></td><td>垂直上升或下降</td><td>升起来是俯瞰全局、情绪释放；降下来是落到某个人身上</td></tr>
+<tr><td>环绕</td><td><small>arc / orbit</small></td><td>绕着主体转圈</td><td>他是世界的中心；眩晕、高光时刻</td></tr>
+</table></div>
+
+<p>再加上按“跟谁动”来说的<span class="term">跟拍<small>tracking shot</small></span>：镜头的任何移动只要是为了跟住一个运动中的主体，都可以叫跟拍。可以在前面倒着跟、在后面跟、在侧面跟。</p>
+
+<h3 id="s4">看真实的例子</h3>
+
+<figure><div class="vwrap"><video src="assets/video/cam-push.mp4" poster="assets/video/cam-push.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>慢推。</b>镜头从整个化妆间出发，穿过前景的人，缓缓推向镜子前的那个人。十几秒里没有一句台词，但你被一步一步带到了他面前。这是开场“进入一个人物”最经典的方式。<span class="src">《小丑》(2019)，导演 托德·菲利普斯，摄影 劳伦斯·谢尔</span></figcaption></figure>
+
+<div class="grid g2">
+<figure><div class="vwrap"><video src="assets/video/cam-follow.mp4" poster="assets/video/cam-follow.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>从背后跟拍。</b>镜头贴在士兵身后穿过战壕。我们看到的就是他看到的，但同时也看着他。<span class="src">《1917》(2019)，导演 萨姆·门德斯，摄影 罗杰·迪金斯</span></figcaption></figure>
+<figure><div class="vwrap"><video src="assets/video/cam-track.mp4" poster="assets/video/cam-track.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>在前面倒退着跟拍。</b>人朝镜头跑，镜头往后退，始终保持距离。看得到他的脸，也看得到他身后炸开的一切。<span class="src">《1917》(2019)</span></figcaption></figure>
+</div>
+
+<div class="grid g2">
+<figure><div class="vwrap"><video src="assets/video/cam-truck.mp4" poster="assets/video/cam-truck.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>横移。</b>镜头与人物平行移动，严格水平，像舞台布景在滑动。这是韦斯·安德森的招牌。<span class="src">《布达佩斯大饭店》(2014)</span></figcaption></figure>
+<figure><div class="vwrap"><video src="assets/video/cam-aerial.mp4" poster="assets/video/cam-aerial.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>航拍前进。</b>高空向前飞行，地面的细节不断从下方涌入。交代规模，建立世界。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+</div>
+
+<figure><div class="vwrap"><video src="assets/video/cam-whip.mp4" poster="assets/video/cam-whip.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption><b>甩镜。</b>镜头在钢琴手和跳舞的人群之间猛地来回甩，中间是一片运动模糊。每一甩都卡在音乐的节拍上，把两边“缝”成了一场对话。<span class="src">《爱乐之城》(2016)，导演 达米恩·查泽雷</span></figcaption></figure>
+
+<h3 id="s5">一个特别的：滑动变焦</h3>
+
+<p><span class="term">滑动变焦<small>dolly zoom</small></span>，也叫希区柯克变焦，是把“推拉”和“变焦”反着同时做：机器往后退，镜头同时变焦放大（或者反过来）。结果是主体在画面里大小不变，背景却像被拉远或者挤近。那种“世界在变形”的眩晕感，来自 1958 年希区柯克的《迷魂记》，后来《大白鲨》里警长在海滩上那一下让它家喻户晓。</p>
+
+<figure><div class="vwrap"><video src="assets/video/cam-dollyzoom.mp4" poster="assets/video/cam-dollyzoom.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>《迷魂记》里男主角往楼梯井下看的那一眼。楼梯间像被拉长了一样往下坠，而画面的边框没有变。希区柯克用它来拍恐高。<span class="src">《迷魂记》(1958)，导演 阿尔弗雷德·希区柯克</span></figcaption></figure>
+
+<p>它通常只在一个人物“突然意识到某件可怕的事”的瞬间用一次。现在很多剪辑软件和 AI 都能在后期模拟它。</p>
+
+<h2 id="s6">稳还是晃：运动的质地</h2>
+
+<p>同样是跟着一个人往前走，镜头是稳稳地滑行，还是带着脚步的颠簸，给人的感觉完全是两回事。这取决于摄影机被什么东西托着。</p>
+
+<div class="tw"><table>
+<tr><th>方式</th><th>画面的质地</th><th>感觉</th></tr>
+<tr><td>三脚架</td><td>完全静止，或只有平滑的摇和俯仰</td><td>正式、稳定、被设计过</td></tr>
+<tr><td>轨道 / 滑轨 <small>dolly / slider</small></td><td>笔直、匀滑的移动，像在冰面上滑</td><td>精致、从容、“贵”</td></tr>
+<tr><td>斯坦尼康 / 稳定器 <small>steadicam / gimbal</small></td><td>可以自由走动但没有颠簸，像幽灵在飘</td><td>沉浸、流畅。长镜头的主力</td></tr>
+<tr><td>手持 <small>handheld</small></td><td>有细小的不规则晃动，跟着呼吸和脚步</td><td>真实、紧张、纪实、亲密</td></tr>
+<tr><td>摇臂 / 升降机 <small>crane / jib</small></td><td>大幅度的升降和弧线</td><td>宏大、抒情</td></tr>
+<tr><td>无人机 <small>drone</small></td><td>高空的平滑飞行</td><td>上帝视角、开阔</td></tr>
+</table></div>
+
+<p>你不需要知道器材，但要会描述质地：“稳的、匀速的滑动”和“带一点手持的晃动”，是两个截然不同的要求。给口播视频加一点点极轻的手持感，能让它从“网课”变成“有人在跟你说话”；给产品演示加任何晃动，则会让它显得不专业。</p>
+
+<h2 id="s7">速度</h2>
+
+<p>运动的速度和它开始、结束的方式，同样在传递信息。</p>
+
+<ul>
+<li><strong>慢</strong>（几秒钟才移动一点）：酝酿、凝视、庄重。观众甚至意识不到镜头在动，只觉得气氛在收紧。行内管这种几乎察觉不到的慢推叫“creep”。</li>
+<li><strong>匀速中等</strong>：陈述、跟随。镜头是一个安静的陪伴者。</li>
+<li><strong>快</strong>（一秒以内完成）：能量、冲击、惊吓、喜剧。甩镜和急推都属于这类。</li>
+</ul>
+
+<p>实拍的镜头运动起步和停下都有一个缓冲，因为真实的机器有重量。所以让 AI 做虚拟运镜时，匀速只适合“持续不断的慢推”这一种情况；凡是有明确起点和终点的移动，都应该缓入缓出，否则会像幻灯片切换。</p>
+
+<h2 id="s8">长镜头</h2>
+
+<p><span class="term">长镜头<small>long take / oner</small></span>是很长时间不剪切的一个镜头，靠运镜和演员走位来完成本该由剪辑完成的事：换景别、换主体、换空间。上面《1917》的两段，在电影里其实是同一个连续镜头的不同部分，整部片被做成了看起来一刀未剪的样子。</p>
+
+<p>长镜头的效果是“真”。没有剪切，观众就没有喘息的机会，时间和空间是完整的，你会觉得自己被困在了现场。斯科塞斯在《好家伙》里用一个三分钟的斯坦尼康长镜头，跟着主角从后门穿过厨房走进夜总会，让观众和女主角一起被这个人的“面子”震住。</p>
+
+<p>代价是它很慢，也很难。短视频里纯粹的长镜头不多，但它的思路可以借用：<strong>能用一个连续的运动带过去的，就不要切</strong>。比如从一张截图移到旁边的另一张，用镜头横移过去，比切过去更能让人明白“这两张是挨着的”。</p>
+
+<h2 id="s9">虚拟运镜：让不会动的东西动起来</h2>
+
+<p>前面说的都是实拍。但你让 AI 剪的片子里，大量素材是不会动的：照片、截图、文档、插画、图表。让它们“活”的办法，就是在后期给它们加上镜头运动。这部分是 AI 剪辑里真正天天在用的。</p>
+
+<p>下面这个演示用一张静止的剧照，模拟了十种镜头运动。点一点，感受一下每一种，并留意下方的说法。</p>
+
+<div data-demo="camera" data-img="assets/img/comp-frame.jpg"></div>
+
+<h3 id="s10">四种常用的虚拟运镜</h3>
+
+<div class="tw"><table>
+<tr><th>手法</th><th>怎么做</th><th>用在哪</th></tr>
+<tr><td>肯·伯恩斯效果 <small>Ken Burns effect</small></td><td>在一张静态图片上做缓慢的推、拉或平移。名字来自一位用这招拍了几十年历史纪录片的导演</td><td>老照片、截图、任何要停留 2 秒以上的静图。这是默认动作</td></tr>
+<tr><td>推到局部 <small>punch in</small></td><td>快速推近到图片的某一块并停住</td><td>从全图到重点：一个数字、一句话、一张脸</td></tr>
+<tr><td>大画布漫游 <small>canvas camera</small></td><td>把很多元素摆在一张巨大的虚拟画布上，镜头在上面移动、缩放，从一个区域飞到另一个区域</td><td>讲有空间关系的内容：流程、地图、思维导图、一整面墙的资料</td></tr>
+<tr><td>2.5D 视差 <small>parallax</small></td><td>把一张图分成前、中、后几层，镜头移动时各层移动的速度不同，平面图就有了纵深</td><td>插画、海报、历史照片。很“电影”，也更费工</td></tr>
+</table></div>
+
+<p>除此之外，如果画面是用代码或三维软件生成的，还可以有一台真正的虚拟摄影机，推拉摇移环绕都能做，规律和实拍完全一样。</p>
+
+<h3 id="s11">虚拟运镜的几条经验</h3>
+
+<ul>
+<li><strong>幅度要小。</strong>静图上的慢推，4 秒放大 5% 到 10% 就够了。新手总是推得太多，画面像在往脸上砸。</li>
+<li><strong>方向要有逻辑。</strong>推向你要观众看的地方。如果下一张图讲的是“结果”，这一张可以往右移，下一张从左边进来，方向接上。</li>
+<li><strong>相邻的静图换着来。</strong>这张推，下一张拉，再下一张横移。连着五张都是同样的慢推，观众会察觉出“模板感”。</li>
+<li><strong>要读字的时候别动。</strong>屏幕上有需要阅读的文字，镜头就停住，或者只做几乎察觉不到的慢推。</li>
+<li><strong>运动中不要切。</strong>让一个推或移做完再切走，或者干脆在运动中段切到另一个同方向运动的镜头，不要在刚起步的时候切。</li>
+</ul>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>让这些图片动起来，不要太死板。</div></div><div class="row yes"><span>这么说</span><div>这 6 张图片每张停 3 秒。给每张加一个很慢的匀速运动，幅度控制在 6% 以内：第 1、4 张慢推，第 2、5 张慢拉，第 3、6 张从左向右平移。推的落点对准图里的人脸。图上有字的那两张（第 2、5 张）幅度减半。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>这张长截图展示一下。</div></div><div class="row yes"><span>这么说</span><div>这张长截图当作一张大画布。镜头先停在顶部标题 1 秒；然后向下平移到第二段，缓入缓出，用时 0.8 秒，停 2 秒；再推近到第二段里加粗的那句话，让它占画面宽度的 70%，停 2 秒。全程不要切，一个镜头走完。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s12">什么时候动，什么时候不动</h2>
+
+<p>把理由归一归类，镜头值得动的情况只有五种：</p>
+
+<div class="tw"><table>
+<tr><th>理由</th><th>典型的运动</th><th>例子</th></tr>
+<tr><td>跟随</td><td>跟拍、摇</td><td>人在走，东西在移动，镜头跟着</td></tr>
+<tr><td>揭示</td><td>拉、摇、升</td><td>先看到局部，镜头一动，露出之前没看到的东西</td></tr>
+<tr><td>强调</td><td>推、急推</td><td>这句话、这个表情、这个数字很重要</td></tr>
+<tr><td>连接</td><td>摇、横移、甩</td><td>让观众明白 A 和 B 在同一个空间里，或者有因果关系</td></tr>
+<tr><td>情绪</td><td>慢推、环绕、手持</td><td>内容没变，但气氛在变：越来越紧、越来越晕</td></tr>
+</table></div>
+
+<p>不属于这五种，就让它静止。静止本身是一种很有力的选择：小津安二郎几乎一辈子不动摄影机，韦斯·安德森的镜头要么纹丝不动要么只走直线。当全片大部分时间是静的，偶尔的一次运动才显得有分量。</p>
+
+<p>AI 做片子时的通病恰恰相反：每个画面都在慢推，每个元素都在漂浮，因为“动”看起来更“丰富”。你要做的往往是叫停。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>运镜规则：默认固定机位。只有三种情况允许动：一，静态图片停留超过 2.5 秒时加极慢的推或拉；二，需要从全图指向局部时用推近；三，全片最重要的那一句用一次缓慢的推近到人脸特写。其他时候不要动，尤其是屏幕上有字要读的时候。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s13">这一章的词，放进一句话里</h2>
+
+<p>描述一次运镜，说清四件事：<strong>什么运动 + 从哪到哪 + 多久多快 + 什么质地</strong>。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>从全景开始，稳定地向前推，6 秒里推到人物的近景，起步慢、越来越稳，最后轻轻停住。不要任何晃动。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>手持感的跟拍：镜头在人物侧后方，跟着他快步穿过走廊，带轻微的脚步颠簸。到门口时他停下，镜头继续向前半步再停，变成过肩镜头。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>这一镜结尾向右甩出去，带强运动模糊，0.2 秒；下一镜从左边甩进来，同样 0.2 秒。两次甩的方向一致，中间不要有清晰的帧。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+      <div class="pn"><a href="light-color.html"><small>上一章</small><b>光与色</b></a><a class="nx" href="cut.html"><small>下一章</small><b>切点与连贯</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>

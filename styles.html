@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>画风图鉴 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html"><i>02</i>景别、角度与构图</a><a href="light-color.html"><i>03</i>光与色</a><a href="camera.html"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html" class="on"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">动效</div>
+      <h1>画风图鉴</h1>
+      <p class="lede">风格是六组旋钮各拧到一个位置、然后全片不变的那个组合。这一章把常见的二十种组合摆出来，每一种都有真实作品、识别特征和一段可以直接抄给 AI 的描述。</p>
+      
+
+
+<h2 id="s1">怎么用这一章</h2>
+
+<p>这一章是字典，不用从头读到尾。两种用法：</p>
+
+<ul>
+<li><strong>你有一条参考片，不知道它算什么风格。</strong>往下翻图，找长得像的，就知道它叫什么、由哪些特征构成。</li>
+<li><strong>你有内容，不知道做成什么样。</strong>看每种风格的“适合”一栏，挑一个，把“对 AI 说”那段抄走再改。</li>
+</ul>
+
+<p>每种风格都按同一个格式拆：<strong>色</strong>（配色）、<strong>形</strong>（图形和材质）、<strong>字</strong>、<strong>动</strong>（运动方式）、<strong>声</strong>。这五项就是<a href="brief.html">描述风格的五件套</a>。风格之间可以混搭，但新手建议先选一个，做纯。</p>
+
+<p>先给一张总表，按“画面是怎么来的”分了四组：</p>
+
+<div class="tw"><table>
+<tr><th>组</th><th>风格</th><th>一句话</th></tr>
+<tr><td rowspan="6">图形动效</td><td>扁平 MG</td><td>纯色块、几何形，最通用的解说风格</td></tr>
+<tr><td>扁平插画</td><td>有角色有场景的扁平，Kurzgesagt 那种</td></tr>
+<tr><td>产品界面动效</td><td>浅色底、真实界面、柔和的 3D 转动</td></tr>
+<tr><td>动态排版</td><td>只有字在动</td></tr>
+<tr><td>线条</td><td>只用线，极简</td></tr>
+<tr><td>颗粒渐变插画</td><td>柔和的渐变加噪点，艺术感</td></tr>
+<tr><td rowspan="5">材质与手工</td><td>拼贴 / 剪纸</td><td>照片抠图、纸张纹理、像剪报</td></tr>
+<tr><td>纸片贴纸</td><td>真实素材装在白边纸片里，贴在桌面上</td></tr>
+<tr><td>定格</td><td>实物一帧一帧拍</td></tr>
+<tr><td>水墨</td><td>墨在纸上晕开</td></tr>
+<tr><td>手绘 / 漫画</td><td>笔触、网点、一拍二</td></tr>
+<tr><td rowspan="4">数字与复古</td><td>像素</td><td>老游戏机的方块</td></tr>
+<tr><td>故障 / 赛博</td><td>信号撕裂、霓虹、暗色</td></tr>
+<tr><td>3D 渲染</td><td>有体积、有光影的三维物体</td></tr>
+<tr><td>代码生成的数据美学</td><td>暗底、发光的点和线、由程序算出来</td></tr>
+<tr><td rowspan="5">以实拍和录屏为主</td><td>电影感</td><td>宽画幅、浅景深、调色</td></tr>
+<tr><td>口播加 B-roll</td><td>人讲，画面证</td></tr>
+<tr><td>录屏演示</td><td>屏幕录像加自动放大和光标高亮</td></tr>
+<tr><td>瑞士风动态海报</td><td>网格、大字、强对比</td></tr>
+<tr><td>片头式的字体设计</td><td>见<a href="type.html">上一章</a></td></tr>
+</table></div>
+
+<h2 id="s2">图形动效</h2>
+
+<div class="style">
+<h3 id="s3">扁平 MG</h3>
+<figure><div class="vwrap"><video src="assets/video/st-flat.mp4" poster="assets/video/st-flat.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>Google BigQuery 的产品解说。蓝、黄、灰三个颜色，矩形和圆，没有任何阴影和渐变。<span class="src">《Google BigQuery》解说动画</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>三到四个纯色，一个浅色或白色的底。没有渐变</dd>
+<dt>形</dt><dd>圆、方、线这些基本几何形。没有描边或描边统一粗细，没有投影，没有纹理</dd>
+<dt>字</dt><dd>无衬线黑体，字不多</dd>
+<dt>动</dt><dd>形状的生长、变形、组合；镜头在一张大画布上平移。缓出，利落</dd>
+<dt>声</dt><dd>轻快的器乐，清脆的小音效</dd>
+<dt>适合</dt><dd>抽象概念、流程、产品原理。什么都能讲，所以也最容易做得平庸</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>扁平几何风格。白色底，只用蓝 #4285F4、黄 #F4B400、浅灰三个颜色。所有图形由圆、矩形、直线构成，不要描边、不要投影、不要渐变。用形状的生长和变形来讲内容：一个圆点分裂成很多个，一排矩形长成柱状图。镜头在一张大画布上平滑移动，不切镜头。缓出，单个动作 0.4 秒左右。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s4">扁平插画</h3>
+<figure><div class="vwrap"><video src="assets/video/st-kurz.mp4" poster="assets/video/st-kurz.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>德国科普频道 Kurzgesagt。深色的底，高饱和的撞色，圆润的角色，等距视角的小场景。<span class="src">Kurzgesagt – In a Nutshell</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>深色（深蓝、深紫）底上放高饱和的亮色，每个场景一套配色</dd>
+<dt>形</dt><dd>圆润的矢量插画，有角色（他们的标志是小鸟）、有场景。形状内部用同色系的深浅做简单的明暗，带一点发光</dd>
+<dt>字</dt><dd>很少，主要靠旁白</dd>
+<dt>动</dt><dd>角色有简单的表演；场景内部元素持续有小动作；镜头推拉穿越不同尺度</dd>
+<dt>声</dt><dd>定制的电子配乐，音效丰富而圆润</dd>
+<dt>适合</dt><dd>大尺度的科普：宇宙、生物、历史、未来。制作成本很高</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>扁平插画风格，参考 Kurzgesagt。深蓝紫色的底，元素用高饱和的橙、青、品红。所有东西画成圆角的矢量图形，内部用两到三个同色系的色阶表现体积，高光处带轻微的外发光。场景用等距视角。画面里的小东西保持轻微的循环运动。镜头用缓慢的推近在不同尺度之间切换。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s5">产品界面动效</h3>
+<figure><img loading="lazy" src="assets/img/st-product.jpg" alt="界面卡片带着透视转动，背景是几乎看不出的浅色渐变。动态片段见上一章的 Gemini 发布片。"><figcaption>界面卡片带着透视转动，背景是几乎看不出的浅色渐变。动态片段见上一章的 Gemini 发布片。<span class="src">《Google Gemini》(2024)，Ordinary Folk</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>白或极浅的灰底，带一点品牌色的柔光；或者反过来，近黑的底配发光</dd>
+<dt>形</dt><dd>真实的产品界面，做成有圆角和柔和投影的卡片，在三维空间里倾斜、转动。大量留白</dd>
+<dt>字</dt><dd>一种干净的无衬线体，逐词出现，关键词用品牌色</dd>
+<dt>动</dt><dd>很强的缓出，没有回弹；元素延续到下一屏；镜头轻微地推和转</dd>
+<dt>声</dt><dd>干净的电子乐，音效极轻</dd>
+<dt>适合</dt><dd>软件、App、AI 产品的发布和功能介绍。这是现在科技公司的标准语言</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>产品发布片的风格。底色 #F7F7FA，四角有非常淡的品牌色柔光。产品界面截图做成圆角 24 像素的卡片，带柔和的大范围投影，在三维空间里倾斜 15 度左右缓慢转动。文案用一种无衬线体，居中，逐词淡入上滑，关键词变成品牌色。所有运动用强缓出，不回弹，0.5 秒。场景之间用元素延续来过渡，不要硬切也不要花哨转场。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s6">动态排版</h3>
+<figure><img loading="lazy" src="assets/img/ty-apple1.jpg" alt="黑底白字，一次只说一个词组。动态片段见上一章的《Don&#x27;t Blink》和《Typoholic》。"><figcaption>黑底白字，一次只说一个词组。动态片段见上一章的《Don't Blink》和《Typoholic》。<span class="src">Apple《Don't Blink》(2016)</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>两个颜色：底和字。最多加一个强调色</dd>
+<dt>形</dt><dd>没有图形，或者字本身就是图形</dd>
+<dt>字</dt><dd>一种有性格的粗体，放得很大。字号对比强烈</dd>
+<dt>动</dt><dd>卡着节拍闪现、替换、缩放。快，硬</dd>
+<dt>声</dt><dd>节奏鲜明的音乐，鼓点就是剪辑点</dd>
+<dt>适合</dt><dd>观点、宣言、发布会回顾、快节奏的要点罗列。不需要任何素材，成本最低</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>纯文字的快闪风格。黑底白字，一种特粗的黑体。每屏只放一个词或一个短语，占画面宽度的六成以上。字直接硬切出现，卡在音乐的每一拍或每两拍上；每隔七八屏插一个数字，用强调色并放大到占满屏幕。全片不用任何图片，不用转场。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s7">线条</h3>
+<figure><div class="vwrap"><video src="assets/video/st-line.mp4" poster="assets/video/st-line.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>只用白色的线。点延伸成线，线弯成弧，弧交织成结构。<span class="src">《点与线的织物》，B 站 AxvvxA</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>单色的线，单色的底</dd>
+<dt>形</dt><dd>粗细一致的线条。没有填充色</dd>
+<dt>字</dt><dd>细的无衬线体，或者手写</dd>
+<dt>动</dt><dd>描边绘制：线被画出来、延伸、变形。连续不断</dd>
+<dt>声</dt><dd>极简的钢琴或电子音</dd>
+<dt>适合</dt><dd>抽象的关系、结构、原理；品牌标志演绎。看起来聪明而克制</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>线条风格。深色底，只用 2 像素粗的白色线条，不要任何填充色。所有图形都由线构成，用描边绘制的方式出现，像被一笔画出来。一个图形变成下一个图形时线条直接变形过去，不要消失再出现。整体缓慢、连续。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s8">颗粒渐变插画</h3>
+<figure><div class="vwrap"><video src="assets/video/st-grain.mp4" poster="assets/video/st-grain.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>Ordinary Folk 的短片《Creation》。形状边缘是柔的，颜色之间晕染过渡，整个画面蒙着一层细颗粒。<span class="src">《Creation》，Ordinary Folk</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>大面积的柔和渐变，颜色大胆但被噪点“压”得很舒服</dd>
+<dt>形</dt><dd>有机的、流动的形状，边缘模糊。全画面叠一层明显的颗粒</dd>
+<dt>字</dt><dd>少。衬线体或手写体</dd>
+<dt>动</dt><dd>缓慢的流动和形变，像液体或烟</dd>
+<dt>声</dt><dd>氛围音乐</dd>
+<dt>适合</dt><dd>情感、理念、品牌故事。不适合讲具体的信息</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>颗粒渐变的插画风格。形状用柔和的色彩渐变填充，边缘带模糊，像喷枪画的。整个画面叠一层明显的胶片噪点。运动缓慢、流动，形状之间平滑地变形过渡。不要硬边、不要纯色块、不要线条。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<h2 id="s9">材质与手工</h2>
+
+<div class="style">
+<h3 id="s10">拼贴 / 剪纸</h3>
+<figure><div class="vwrap"><video src="assets/video/st-collage.mp4" poster="assets/video/st-collage.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>照片被抠出来，加白边或硬边，贴在一张带网格的旧纸上，旁边配手写感的标签和箭头。美国媒体 Vox 的解说视频把这种手法带火了。<span class="src">B 站 拼贴动画工作室</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>米黄的纸张底色，素材保留原色或做成单色，一两个强调色</dd>
+<dt>形</dt><dd>抠出来的照片、老图片、地图、报纸；纸张纹理；撕边、胶带、图钉、荧光笔</dd>
+<dt>字</dt><dd>打字机体、粗黑体，像剪下来的标签</dd>
+<dt>动</dt><dd>元素像纸片一样被放上来、滑进来，略带一拍二的顿挫；镜头在桌面上移动</dd>
+<dt>声</dt><dd>纸张、剪刀、笔的声音</dd>
+<dt>适合</dt><dd>历史、新闻解读、社科话题。它天然带“有据可查”的气质，因为用的都是真材料</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>纸质拼贴风格。底是一张带淡网格的米黄色旧纸。所有图片素材抠出主体，加 6 像素的白边和轻微的硬投影，像剪下来贴上去的。标签用打字机字体，底下垫一条黄色荧光笔的色块。箭头和圈是手绘的。元素进场像被手放到纸上：从略大的尺寸落下来，按每秒 12 帧更新，配纸张的声音。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s11">纸片贴纸</h3>
+<p>这是拼贴的一个近亲，这两年在中文知识视频里很常见：浅色的桌面或米纸底，真实的截图和视频装在白边“相纸”或实物设备（手机、电脑、平板）里播放，旁边有手写批注和印刷大字，有时加一个贯穿全片的卡通角色或真人抠像贴纸。它的优势是可以把大量来源不一的真实素材统一成一套，而且看起来不像模板。</p>
+<dl class="meta">
+<dt>色</dt><dd>米白底，炭黑字，一个强调色</dd>
+<dt>形</dt><dd>白边纸片、设备外框、便签、印章、手绘圈线。有轻微的纸张纹理和投影</dd>
+<dt>字</dt><dd>粗的印刷黑体做标题，手写体做批注</dd>
+<dt>动</dt><dd>贴上、划线、圈出、盖章。稳，不回弹</dd>
+<dt>适合</dt><dd>拆解类的内容：拆一个产品、一个事件、一个原理。需要展示大量截图和录屏的时候</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>纸片贴纸风格。米白色纸质桌面做底。所有截图和视频素材都装进容器里再出现：网页截图装在白边纸片里，App 界面装在手机外框里，录屏装在笔记本电脑外框里。容器带轻微投影，可以略微倾斜两三度。重点用橙色手绘圈和下划线标出，旁边配手写体的短批注。标题用特粗黑体直接印在纸面上。每一屏只放一到两个容器，周围留白。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s12">定格</h3>
+<figure><div class="vwrap"><video src="assets/video/st-stop.mp4" poster="assets/video/st-stop.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>韦斯·安德森的《犬之岛》。真实的木偶，一帧一帧摆拍。毛发在每一帧之间轻微地抖动，那是手碰过的痕迹。<span class="src">《犬之岛》(2018)，导演 韦斯·安德森</span></figcaption></figure>
+<dl class="meta">
+<dt>形</dt><dd>真实的材质：黏土、布、纸、木头、毛。看得见手工的不完美</dd>
+<dt>动</dt><dd>每秒 12 帧甚至更低，动作有顿挫感。没有运动模糊</dd>
+<dt>声</dt><dd>写实的拟音被放大</dd>
+<dt>适合</dt><dd>有温度的故事、手作品牌、儿童内容。真做极费时间，但可以用 3D 或 AI 生成来模仿它的质感和帧率</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>模仿定格动画的质感。角色和道具看起来是黏土或毛毡做的，表面有指纹和纤维的细节。所有运动按每秒 12 帧更新，不加运动模糊，每一帧之间材质表面有极轻微的抖动。光是柔和的棚拍光，有真实的投影。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s13">水墨</h3>
+<figure><div class="vwrap"><video src="assets/video/st-ink.mp4" poster="assets/video/st-ink.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>上海美术电影制片厂 1988 年的《山水情》。没有一句对白，人物和山水都是墨在宣纸上晕出来的。<span class="src">《山水情》(1988)，导演 特伟、阎善春、马克宣</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>墨的黑白灰，偶尔一点淡彩。大面积留白</dd>
+<dt>形</dt><dd>毛笔的笔触，浓淡干湿的变化，边缘晕开。没有清晰的轮廓线</dd>
+<dt>动</dt><dd>缓慢。墨迹渗开、生长、消散</dd>
+<dt>声</dt><dd>古琴、笛、自然声</dd>
+<dt>适合</dt><dd>传统文化、诗词、茶、东方意境。和快节奏不兼容</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>水墨风格。宣纸质感的米白底，大量留白。所有图形用毛笔笔触画成，墨色有浓淡，边缘自然晕开。元素出现的方式是墨滴落在纸上向外渗开成形，消失时淡成水痕。节奏很慢，镜头只做缓慢的横移。配古琴。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s14">手绘 / 漫画</h3>
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/st-comic.jpg" alt="印刷网点、粗黑的轮廓线、错位的色版。"><figcaption>印刷网点、粗黑的轮廓线、错位的色版。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/st-comic2.jpg" alt="三维的场景，二维的线条和笔触叠在上面。"><figcaption>三维的场景，二维的线条和笔触叠在上面。</figcaption></figure>
+</div>
+<p style="font-size:12px;color:var(--ink-3);margin-top:-10px">《蜘蛛侠：平行宇宙》(2018)，索尼动画</p>
+<dl class="meta">
+<dt>色</dt><dd>高饱和。印刷品的质感：网点、色版错位的红蓝边</dd>
+<dt>形</dt><dd>看得见笔触和线条；漫画的速度线、拟声字、分格</dd>
+<dt>动</dt><dd>角色一拍二（每秒 12 帧），镜头一拍一（每秒 24 帧）。这种不一致产生了它特有的“脆”感</dd>
+<dt>适合</dt><dd>年轻、潮流、动作感强的内容。《平行宇宙》之后，这种“看得出是画的”三维动画成了一个流派</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>漫画印刷风格。粗的黑色轮廓线，颜色高饱和，阴影部分用印刷网点表现。画面边缘有轻微的红蓝色版错位。动作按每秒 12 帧更新。冲击性的时刻加速度线和手写的拟声大字，画面可以分成漫画格。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<h2 id="s15">数字与复古</h2>
+
+<div class="style">
+<h3 id="s16">像素</h3>
+<figure><div class="vwrap"><video src="assets/video/st-pixel.mp4" poster="assets/video/st-pixel.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>把吉卜力的动画电影重画成老游戏机的样子。有限的颜色，方块组成的一切。<span class="src">CineFix《8-Bit Cinema》系列，吉卜力作品像素重绘</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>有限的调色板，十几到几十个颜色</dd>
+<dt>形</dt><dd>看得见的方块像素，没有抗锯齿。横版卷轴的场景</dd>
+<dt>字</dt><dd>像素字体</dd>
+<dt>动</dt><dd>帧数很少的逐帧动画；整像素地移动；对话框逐字弹出</dd>
+<dt>声</dt><dd>芯片音乐</dd>
+<dt>适合</dt><dd>游戏相关、怀旧、把严肃的事讲得好玩</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>像素风格，像十六位游戏机的画面。画面实际分辨率 320×180，放大到全屏并保持像素边缘锐利。调色板限制在 24 色。角色动画每个动作 4 到 6 帧。文字用像素字体，装在游戏对话框里逐字出现，配“嘟嘟”的打字音。背景音乐用芯片音乐。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s17">故障 / 赛博</h3>
+<figure><div class="vwrap"><video src="assets/video/st-glitch.mp4" poster="assets/video/st-glitch.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>三维渲染的机械躯体，画面被彩色的信号撕裂打断。<span class="src">《Future Vision · Machine》，B 站 che-llo</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>近黑的底。霓虹的青、品红、荧光绿</dd>
+<dt>形</dt><dd>扫描线、色彩通道错位、画面横向撕裂、数据噪点；线框、读数、界面碎片</dd>
+<dt>字</dt><dd>等宽字体，全大写</dd>
+<dt>动</dt><dd>几帧的抖动和跳变；快速的闪烁</dd>
+<dt>声</dt><dd>电流声、低频、合成器</dd>
+<dt>适合</dt><dd>科技、安全、未来、游戏。也用来表示“出错了”“被干扰了”。用多了刺眼</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>赛博故障风格。黑底，主色是青 #00F0FF 和品红 #FF2D95。画面常驻很淡的横向扫描线。段落切换时做 4 到 6 帧的故障：画面横向切成几条错位，红蓝通道分离，然后恢复。文字用等宽字体全大写，出现时带一两帧的乱码。平时保持安静，故障只在切换时出现。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s18">3D 渲染</h3>
+<figure><img loading="lazy" src="assets/img/st-3d.jpg" alt="有真实材质和光影的三维物体，放在纯黑的空间里。"><figcaption>有真实材质和光影的三维物体，放在纯黑的空间里。<span class="src">《Future Vision · Machine》，B 站 che-llo</span></figcaption></figure>
+<dl class="meta">
+<dt>形</dt><dd>有体积的物体，材质可以是写实的（金属、玻璃、塑料），也可以是风格化的（黏土、磨砂、气球）</dd>
+<dt>动</dt><dd>物体缓慢旋转、拆解、组合；镜头环绕和推拉</dd>
+<dt>光</dt><dd>三维画面的质感九成来自光。上一章的<a href="light-color.html">软硬、方向、明暗比</a>在这里全部适用</dd>
+<dt>适合</dt><dd>实体产品的展示、结构拆解；黏土质感的圆润 3D 是近几年界面和插画里的流行</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>三维产品展示。产品放在深灰色的无缝背景里，柔和的主光从左上方来，右后方有一道冷色的轮廓光勾出边缘，地面有柔和的接触阴影。镜头用 6 秒绕产品缓慢转四分之一圈。然后产品沿中轴拆开成五层，每层旁边画出一条引线和标签。材质写实：磨砂铝和玻璃。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s19">代码生成的数据美学</h3>
+<figure><div class="vwrap"><video src="assets/video/st-code.mp4" poster="assets/video/st-code.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>一条讲“临界点”的知识短片。屏幕上的格子、曲线、数字全部由程序实时算出来：点亮多少格子、能不能连通，画面演的就是字幕说的那件事。全片没有一张图片素材。<span class="src">《临界点》，B 站 低调的神经</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>近黑的底，一个发光的暖色或冷色做主角，其余是深灰</dd>
+<dt>形</dt><dd>点阵、网格、曲线、粒子。成千上万个小元素组成的图像</dd>
+<dt>字</dt><dd>宋体或衬线体做叙述，等宽体做读数。字很小，很克制</dd>
+<dt>动</dt><dd>模拟真实的过程：扩散、生长、碰撞、收敛。运动是算出来的，所以有一种“真”的质感</dd>
+<dt>声</dt><dd>氛围音乐，没有或很少旁白，靠字幕叙述</dd>
+<dt>适合</dt><dd>数学、物理、概率、系统这类可以被模拟的概念。这是最适合 AI 用代码直接生成的风格之一，3Blue1Brown 的数学视频是它的前辈</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>代码生成的数据可视化风格。底色 #0B0E14，主角色是琥珀色 #F2B544，带轻微外发光，其余元素用深灰蓝。画面中央是一个由程序模拟的过程（网格、粒子或曲线），顶部一行宋体小字做叙述，底部用等宽字体显示实时读数。每一句字幕说的事情，屏幕上的模拟就真的发生一遍。不用任何图片素材，不用图标。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<h2 id="s20">以实拍和录屏为主</h2>
+
+<div class="style">
+<h3 id="s21">电影感</h3>
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/st-vlog.jpg" alt="逆光剪影，低饱和的暖色，宽画幅。"><figcaption>逆光剪影，低饱和的暖色，宽画幅。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/st-vlog2.jpg" alt="浅景深，一盏实景光源，暗部保留。"><figcaption>浅景深，一盏实景光源，暗部保留。</figcaption></figure>
+</div>
+<p style="font-size:12px;color:var(--ink-3);margin-top:-10px">影视飓风作品片段</p>
+<dl class="meta">
+<dt>画面</dt><dd>24 帧；宽画幅或加黑边；浅景深；有方向的光；低饱和、有倾向的调色；颗粒</dd>
+<dt>运动</dt><dd>稳定而缓慢的推、移；或克制的手持</dd>
+<dt>剪辑</dt><dd>镜头偏长，留白多；J cut 和 L cut</dd>
+<dt>声</dt><dd>环境声丰富；配乐铺底；人声干净</dd>
+<dt>字</dt><dd>小号的衬线体或细黑体，带字距</dd>
+<dt>适合</dt><dd>人物、旅行、品牌故事、有情绪的 Vlog</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>电影感的处理。导出 24 帧，画幅 2.39:1（上下加黑边）。调色：对比略高，饱和降 15%，暗部偏青、高光偏暖，保护肤色，加细的胶片颗粒。镜头以稳定的慢推和横移为主。剪辑节奏放慢，平均每个镜头 4 秒以上，段落之间用 J cut。保留并加强环境声，音乐压低。字幕用小号的衬线体，字距加宽。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s22">口播加 B-roll</h3>
+<p>中文互联网上数量最多的一类。一个人对着镜头讲，讲到什么画面就盖什么。它不算一种“画风”，但有一套固定的语法，在<a href="anatomy.html">第 1 章</a>和<a href="cut.html">第 5 章</a>已经分散讲过，这里合起来。</p>
+<dl class="meta">
+<dt>人</dt><dd>中近景，眼睛在上三分线；背景简单，略微虚化</dd>
+<dt>剪</dt><dd>去掉所有停顿和废话；跳切用缩放或 B-roll 遮掩</dd>
+<dt>B-roll</dt><dd>每 3 到 8 秒一段，展示讲到的那个东西本身</dd>
+<dt>字</dt><dd>全程字幕；关键词做强调字</dd>
+<dt>声</dt><dd>人声清晰；音乐闪避；关键处有音效</dd>
+<dt>升级</dt><dd>在此基础上换一套统一的 B-roll 风格（上面任何一种），就有了辨识度</dd>
+</dl>
+</div>
+
+<div class="style">
+<h3 id="s23">录屏演示</h3>
+<figure><div class="vwrap"><video src="assets/video/st-screen.mp4" poster="assets/video/st-screen.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>这类工具会在录屏时自动跟随光标放大、给窗口加圆角和投影、垫一张壁纸做背景。Screen Studio 把这种样式带成了软件演示的标配。<span class="src">B 站 生产力Mark，录屏放大效果演示</span></figcaption></figure>
+<dl class="meta">
+<dt>形</dt><dd>录屏窗口不铺满，缩小后放在一张渐变或壁纸背景上，带圆角和投影</dd>
+<dt>动</dt><dd>光标移到哪，画面平滑地放大到哪；点击处有一圈涟漪；操作之间的等待被加速</dd>
+<dt>字</dt><dd>少量的步骤标签和按键提示</dd>
+<dt>适合</dt><dd>软件教程、产品演示、功能更新</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>录屏演示的处理。录屏窗口缩到画面的 85%，加 16 像素圆角和柔和投影，垫一张深色的渐变背景。每次点击前，画面在 0.5 秒内平滑放大到 180% 并以光标为中心，操作完成后停 1 秒再缩回。光标放大到 1.5 倍，点击时加一圈扩散的圆。打字和加载的过程加速到 4 倍。每一步在左上角显示一个步骤编号和一句话说明。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<div class="style">
+<h3 id="s24">瑞士风动态海报</h3>
+<figure><div class="vwrap"><video src="assets/video/st-poster.mp4" poster="assets/video/st-poster.jpg" controls muted loop data-auto playsinline preload="none"></video><span class="vtag">片段 · 循环</span></div><figcaption>严格的网格，极细的大字，几个会动的圆。它本来是一张海报，只是里面的元素在动。<span class="src">瑞士 Feixen 工作室动态海报</span></figcaption></figure>
+<dl class="meta">
+<dt>色</dt><dd>黑、白加一个纯色</dd>
+<dt>形</dt><dd>严格的网格对齐；大面积留白；基本几何形</dd>
+<dt>字</dt><dd>无衬线体（Helvetica 一类），字号对比极大，文字本身是最主要的视觉元素</dd>
+<dt>动</dt><dd>克制、循环；元素在网格里移动、缩放</dd>
+<dt>适合</dt><dd>活动预告、展览、音乐、时尚。也适合做知识视频的封面和章节页</dd>
+</dl>
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>瑞士平面设计风格的章节页。画面按 12 列网格排版，所有元素严格对齐。黑底，白字，一个黄色。标题用极细的无衬线体放到撑满画面高度，小字信息排在网格的角落。两三个纯色的圆在画面里缓慢移动、互相融合，循环。停留 2 秒后硬切进正文。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+</div>
+
+<h2 id="s25">选风格的四个问题</h2>
+
+<ol class="steps">
+<li><b>我手里有什么素材？</b>全是截图和录屏，选纸片贴纸、录屏演示或拼贴。什么素材都没有，选动态排版、扁平 MG 或代码生成。有好的实拍，选电影感或口播加 B-roll。</li>
+<li><b>内容是讲信息还是讲感受？</b>讲信息要清晰，选扁平、产品界面、拼贴。讲感受要氛围，选颗粒渐变、电影感、水墨。</li>
+<li><b>观众是谁，平台是哪？</b>手机竖屏上，细线条和小字的风格会吃亏；年轻的平台对快节奏和手工感更友好。</li>
+<li><b>我要做一条还是一个系列？</b>做系列就选一个能长期保持、制作成本可控的风格，并把规则写下来。辨识度来自重复。</li>
+</ol>
+
+<div class="co tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2.2h5c.1-1 .5-1.700 1.100-2.200A6 6 0 0 0 12 3z"/></svg><div><p>拿不准的时候，让 AI 用同一段 10 秒的内容，按三种不同风格各做一个版本。看着成品选，比看着描述想象可靠得多。</p></div></div>
+
+      <div class="pn"><a href="type.html"><small>上一章</small><b>文字、图形与片头</b></a><a class="nx" href="directors.html"><small>下一章</small><b>向导演和频道学</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>景别、角度与构图 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html" class="on"><i>02</i>景别、角度与构图</a><a href="light-color.html"><i>03</i>光与色</a><a href="camera.html"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">镜头语言</div>
+      <h1>景别、角度与构图</h1>
+      <p class="lede">先不让画面动。一帧静止的画面里，你能决定三件事：框多大，从哪看，东西怎么摆。这三件事有一套用了一百年的名字。</p>
+      
+
+
+<h2 id="s1">先有一个主体</h2>
+
+<p>在说框多大之前，先问框里是谁。每一个画面都得有一个<strong>主体</strong>：观众这一刻该看的那个人、那件东西、那个数字。没有主体的画面，观众的眼睛会四处找，找不到就划走。</p>
+
+<p>对一个长期做内容的账号来说，还有更大的一层主体：贯穿你所有片子的那个固定形象。它可以是出镜的你自己，可以是一个卡通角色，一个抠出来的真人贴纸，一只吉祥物，甚至只是一个固定的声音加一种固定的画法。Kurzgesagt 的每条片里都有那几只圆滚滚的小鸟，观众不看频道名也认得出来。别人记住的往往不是你讲了什么，是“那个谁”。</p>
+
+<p>这件事和 AI 剪辑关系很大。AI 每次都可以给你生成一套新的画面，如果你不规定一个固定的主体，你的十条片子会像十个人做的。所以值得在一开始就定下来：我的片子里，站在画面中间的是谁，长什么样，每次怎么出场。下面要讲的景别，说的就是这个主体在框里占多大。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>做个有辨识度的视频。</div></div><div class="row yes"><span>这么说</span><div>我所有的片子都用同一个主体：附件这张我本人的抠像，做成带白边的贴纸，放在画面右下角，占画面高度的三分之一。讲观点的时候它放大到近景并移到中间，讲素材的时候缩回角落。每条片它第一次出现时都是从下方弹上来。以后每一条都照这个规则，不要换形象。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s2">景别：框多大</h2>
+
+<p><span class="term">景别<small>shot size</small></span>说的是主体在画面里占多大。它是镜头语言里最基础的一个旋钮，也是你对 AI 说得最多的一个词。同一个人，框大一点是“他在哪”，框小一点是“他在做什么”，再小是“他在想什么”。</p>
+
+<p>下面八张图，前两张来自《疯狂的麦克斯：狂暴之路》，后六张全部来自《爆裂鼓手》结尾的同一场演出。同一个人、同一套鼓、同一个舞台，只是框的大小在变。</p>
+
+<div class="grid g4 wide">
+<figure><img loading="lazy" src="assets/img/size-els.jpg" alt="大远景人只是一个点。讲的是环境、孤独、渺小。"><figcaption><b>大远景</b>人只是一个点。讲的是环境、孤独、渺小。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-ls.jpg" alt="远景 / 全景人从头到脚都在，环境仍占大半。交代“谁在哪”。"><figcaption><b>远景 / 全景</b>人从头到脚都在，环境仍占大半。交代“谁在哪”。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-ws.jpg" alt="全景看得清人物全身和周围的人。交代位置关系。"><figcaption><b>全景</b>看得清人物全身和周围的人。交代位置关系。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-ms.jpg" alt="中景腰部以上。看得清动作和手，是“做事”的景别。"><figcaption><b>中景</b>腰部以上。看得清动作和手，是“做事”的景别。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-mcu.jpg" alt="近景胸部以上。表情开始成为主角，对话最常用。"><figcaption><b>近景</b>胸部以上。表情开始成为主角，对话最常用。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-cu.jpg" alt="特写只有脸。情绪被放到最大，观众无处可逃。"><figcaption><b>特写</b>只有脸。情绪被放到最大，观众无处可逃。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-ecu.jpg" alt="大特写一个局部：鼓槌、眼睛、指尖。强调细节，制造张力。"><figcaption><b>大特写</b>一个局部：鼓槌、眼睛、指尖。强调细节，制造张力。</figcaption></figure>
+<figure><img loading="lazy" src="assets/img/size-insert.jpg" alt="插入镜头切给一个物件：乐谱、手机屏幕、钟。补一条信息。"><figcaption><b>插入镜头</b>切给一个物件：乐谱、手机屏幕、钟。补一条信息。</figcaption></figure>
+</div>
+<p style="margin-top:-10px;font-size:12px;color:var(--ink-3)">《疯狂的麦克斯：狂暴之路》(2015) 导演 乔治·米勒；《爆裂鼓手》(2014) 导演 达米恩·查泽雷</p>
+
+<div class="tw"><table>
+<tr><th>景别</th><th>英文与缩写</th><th>框到哪</th><th>它在说</th></tr>
+<tr><td>大远景</td><td><small>extreme long shot · ELS</small></td><td>人很小或没有人</td><td>这是什么地方；人在世界里有多小</td></tr>
+<tr><td>远景 / 全景</td><td><small>long shot / wide shot · LS / WS</small></td><td>人物全身加环境</td><td>谁在哪，周围有什么</td></tr>
+<tr><td>中景</td><td><small>medium shot · MS</small></td><td>腰以上</td><td>他在做什么</td></tr>
+<tr><td>近景</td><td><small>medium close-up · MCU</small></td><td>胸以上</td><td>他在说什么，什么表情</td></tr>
+<tr><td>特写</td><td><small>close-up · CU</small></td><td>脸，或一个完整的小物件</td><td>他此刻的感受；“看这个”</td></tr>
+<tr><td>大特写</td><td><small>extreme close-up · ECU</small></td><td>眼睛、嘴、一个按钮</td><td>极度的紧张、专注，或一个决定性的细节</td></tr>
+<tr><td>插入镜头</td><td><small>insert</small></td><td>场景里的一个物件</td><td>补充信息：他看到了什么、时间到了</td></tr>
+</table></div>
+
+<h3 id="s3">三条用得上的规律</h3>
+
+<p><strong>越近，情绪越重；越远，越冷静。</strong>同一句台词，用全景拍像是旁观，用特写拍像是逼问。所以要让观众“代入”就往近走，要让观众“看清局面”就往远走。很多口播视频全程一个中近景，观众对这张脸的距离感从头到尾没变过，情绪自然上不去。讲到关键那句时切一个更近的景别，是最便宜的强调手段。</p>
+
+<p><strong>景别要跳着接。</strong>两个相邻的镜头如果景别差不多、角度也差不多，接在一起会像画面“卡了一下”，这叫跳切，后面<a href="cut.html">剪辑一章</a>会讲。稳妥的做法是相邻镜头至少隔一级：全景接中景，中景接特写。</p>
+
+<p><strong>景别的顺序本身就是叙事。</strong>经典的顺序是由远到近：先大远景告诉你在哪，再全景告诉你有谁，然后中景、近景、特写，一步步把观众拉进去。反过来，由近到远，是先给一个让人好奇的细节，再揭开全貌，常用来开场。</p>
+
+<h3 id="s4">没有真人的片子，也有景别</h3>
+
+<p>这一点对用 AI 做讲解片的人特别重要。你的画面可能是一张网页截图、一张图表、一段代码，它们同样有景别。</p>
+
+<p>整张截图铺满屏幕，是全景：观众知道“这是一个网页”，但读不了上面的字。推近到其中一段，是中景。再推到一个数字、一个按钮、一行字，是特写。新手最常犯的错，就是把一张密密麻麻的截图整张贴上去停三秒，等于全程只给了一个全景，观众什么也没看清。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>把这张截图放上去。</div></div><div class="row yes"><span>这么说</span><div>这张截图分三步给：先全图 1 秒，让人知道这是哪个网站；然后推近到第二段文字，停 2 秒；最后再推到那个红色的数字上，让它占到画面宽度的一半，停 2 秒并用橙色圈出来。每次推近 0.5 秒，缓出。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div><div class="row why"><span>为什么</span><div>全景、中景、特写，对截图同样成立。先交代出处，再给内容，最后给重点。</div></div></div>
+
+<h2 id="s5">角度：从哪看</h2>
+
+<p>景别定了框的大小，<span class="term">角度<small>camera angle</small></span>定的是摄影机相对主体的高低和位置。它悄悄决定了观众和被拍者之间的“地位关系”。</p>
+
+<div class="grid g3">
+<figure><img loading="lazy" src="assets/img/angle-eye.jpg" alt="平视机器和眼睛一样高。中立，平等，像面对面站着。绝大多数镜头的默认选择。"><figcaption><b>平视</b>机器和眼睛一样高。中立，平等，像面对面站着。绝大多数镜头的默认选择。<span class="src">《1917》(2019)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/angle-low.jpg" alt="仰拍从下往上看。人显得高大、有力，也可以是有威胁。"><figcaption><b>仰拍</b>从下往上看。人显得高大、有力，也可以是有威胁。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/angle-high.jpg" alt="俯拍从上往下看。人显得弱小、被压制；也用来交代队形和布局。"><figcaption><b>俯拍</b>从上往下看。人显得弱小、被压制；也用来交代队形和布局。<span class="src">《战舰波将金号》(1925)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/angle-top.jpg" alt="顶拍垂直向下。把场景变成一张平面图，图形感强。美食、手工、桌面讲解常用。"><figcaption><b>顶拍</b>垂直向下。把场景变成一张平面图，图形感强。美食、手工、桌面讲解常用。<span class="src">《爆裂鼓手》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/angle-ots.jpg" alt="过肩越过一个人的肩膀拍另一个人。对话的标准拍法，让观众站在其中一方身后。"><figcaption><b>过肩</b>越过一个人的肩膀拍另一个人。对话的标准拍法，让观众站在其中一方身后。<span class="src">《爆裂鼓手》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/angle-pov.jpg" alt="主观镜头摄影机就是角色的眼睛。第一人称，代入感最强。"><figcaption><b>主观镜头</b>摄影机就是角色的眼睛。第一人称，代入感最强。<span class="src">《布达佩斯大饭店》(2014)，截自 kogonada 视频论文</span></figcaption></figure>
+</div>
+
+<div class="tw"><table>
+<tr><th>角度</th><th>英文</th><th>效果</th><th>常见用法</th></tr>
+<tr><td>平视</td><td><small>eye level</small></td><td>中立、平等</td><td>对话、口播、大多数叙事镜头</td></tr>
+<tr><td>仰拍</td><td><small>low angle</small></td><td>强大、威严、压迫</td><td>英雄亮相、反派登场、建筑</td></tr>
+<tr><td>俯拍</td><td><small>high angle</small></td><td>弱小、无助、被审视</td><td>人物受挫；交代人群和地形</td></tr>
+<tr><td>顶拍</td><td><small>overhead / top-down</small></td><td>客观、图形化、像上帝视角</td><td>桌面操作、美食、地图感的镜头</td></tr>
+<tr><td>倾斜</td><td><small>dutch angle</small></td><td>地平线是歪的。不安、失衡、疯狂</td><td>悬疑、精神不稳定的时刻；用多了就是“装”</td></tr>
+<tr><td>过肩</td><td><small>over the shoulder · OTS</small></td><td>把两个人放进同一个关系里</td><td>对话；看某人在看什么</td></tr>
+<tr><td>主观</td><td><small>point of view · POV</small></td><td>我就是他</td><td>开箱、第一人称操作、游戏、恐怖片</td></tr>
+</table></div>
+
+<p>口播和 Vlog 里，角度的讲究很朴素：镜头和眼睛平齐，或者略高一点点。镜头放得太低，下巴和鼻孔成了主角；放得太高，人像在仰着头求人。让 AI 处理你的自拍素材时，它改不了拍摄角度，但你可以让它裁切和选片时避开角度不好的那几段。</p>
+
+<h2 id="s6">构图：东西怎么摆</h2>
+
+<p>景别和角度定了之后，画面里的元素放在哪、留多少空，叫<span class="term">构图<small>composition</small></span>。它管的是观众的眼睛先看哪、后看哪、停在哪。构图的道理对实拍和对图文版式是同一套，所以这一节对做动效片的人同样有用。</p>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/comp-center.jpg" alt="中心构图主体在正中。稳定、直接、有仪式感。快节奏剪辑里它还有一个好处：观众的眼睛不用移动。"><figcaption><b>中心构图</b>主体在正中。稳定、直接、有仪式感。快节奏剪辑里它还有一个好处：观众的眼睛不用移动。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-thirds.jpg" alt="三分法与留白把画面横竖各分三份，主体放在分割线上。人在左边三分之一，右边大片的黑留给了他的视线和心事。"><figcaption><b>三分法与留白</b>把画面横竖各分三份，主体放在分割线上。人在左边三分之一，右边大片的黑留给了他的视线和心事。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-lines.jpg" alt="引导线栏杆、地面的线条都向远处汇聚，把视线引向走远的人。路、走廊、桥、桌边都能当引导线用。"><figcaption><b>引导线</b>栏杆、地面的线条都向远处汇聚，把视线引向走远的人。路、走廊、桥、桌边都能当引导线用。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-frame.jpg" alt="框中框用拱门把人物再框一次。画面里出现的门、窗、镜子，都是现成的画框，能把注意力锁在里面的东西上。"><figcaption><b>框中框</b>用拱门把人物再框一次。画面里出现的门、窗、镜子，都是现成的画框，能把注意力锁在里面的东西上。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-fg.jpg" alt="前景镜头和主体之间隔着一个人的后脑勺。有了前景，画面就有了“近、中、远”三层，平面变成了空间。"><figcaption><b>前景</b>镜头和主体之间隔着一个人的后脑勺。有了前景，画面就有了“近、中、远”三层，平面变成了空间。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-negative.jpg" alt="负空间画面九成是空的，主体只占一小块。空出来的部分不是浪费，它在说孤独、辽阔、安静。"><figcaption><b>负空间</b>画面九成是空的，主体只占一小块。空出来的部分不是浪费，它在说孤独、辽阔、安静。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+</div>
+
+<figure><img loading="lazy" src="assets/img/comp-silhouette.jpg" alt="剪影背景亮、人物全黑，只剩轮廓。它去掉了表情和细节，只留下姿态和关系。画面里的三组人，谁在等、谁在走、谁在交谈，一眼就清楚。"><figcaption><b>剪影</b>背景亮、人物全黑，只剩轮廓。它去掉了表情和细节，只留下姿态和关系。画面里的三组人，谁在等、谁在走、谁在交谈，一眼就清楚。<span class="src">《爱乐之城》(2016)，导演 达米恩·查泽雷，摄影 莱纳斯·桑德格伦</span></figcaption></figure>
+
+<h3 id="s7">两个不起眼但很要紧的空间</h3>
+
+<p><span class="term">头顶空间<small>headroom</small></span>：人的头顶到画面上边缘的距离。留太多，人像沉在画面底部；不留，像被天花板压着。一般留出半个拳头到一个拳头高。</p>
+
+<p><span class="term">视线空间<small>lead room</small></span>：人往哪边看、往哪边走，就在那一边多留一些空。上面《爱乐之城》那张，人面朝右，右边就是空的。反过来让人贴着他面朝的那条边，会产生被堵住、被困住的感觉，除非你就是要这个效果，否则别这么摆。</p>
+
+<p>AI 在把横屏素材裁成竖屏时，最容易把这两个空间裁没：人脸顶着上边，或者鼻子贴着画框。你可以明确要求它保留。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>把这段横屏的采访裁成竖屏。</div></div><div class="row yes"><span>这么说</span><div>把这段横屏采访裁成 9:16。裁切时让人的眼睛落在画面高度约三分之一处，头顶留一点空，不要顶格。他是朝画面左边看的，所以左边要比右边多留空。人物移动时裁切框跟着平滑移动，不要突然跳。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h3 id="s8">图文和动效画面的构图</h3>
+
+<p>一屏字加图，本质上也是构图问题，只是换了一套说法：</p>
+
+<div class="tw"><table>
+<tr><th>版式上的说法</th><th>对应的构图道理</th><th>怎么要求</th></tr>
+<tr><td>对齐</td><td>画面里的隐形线条。所有元素的边缘落在少数几条线上，画面就整齐</td><td>“所有文字左对齐到同一条线，图片的左边缘也对到这条线。”</td></tr>
+<tr><td>留白</td><td>负空间</td><td>“四周留 8% 的边距，元素之间的间距比元素内部的间距大一倍。”</td></tr>
+<tr><td>层级</td><td>视觉重心：最大、最深、最亮的先被看到</td><td>“标题是正文的 2.5 倍大。一屏只有一个最大的东西。”</td></tr>
+<tr><td>亲密性</td><td>有关系的东西靠在一起</td><td>“图和它的说明文字贴近，和别的图拉开。”</td></tr>
+<tr><td>视觉动线</td><td>引导线。眼睛的移动路径</td><td>“从左上的标题，到中间的图，到右下的结论，按这个顺序依次出现。”</td></tr>
+</table></div>
+
+<h2 id="s9">焦距和景深：画面的“质地”</h2>
+
+<p>这两个词来自镜头的光学特性。你不需要懂原理，只需要认得它们带来的两种观感，因为“电影感”有一半来自这里。</p>
+
+<h3 id="s10">广角和长焦</h3>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/lens-wide.jpg" alt="广角视野宽，近处的东西大、远处的东西小，空间被拉深了。人物奔跑时迎面的冲击感很强。"><figcaption><b>广角</b>视野宽，近处的东西大、远处的东西小，空间被拉深了。人物奔跑时迎面的冲击感很强。<span class="src">《1917》(2019)，摄影 罗杰·迪金斯</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/lens-tele.jpg" alt="长焦视野窄，前后的东西被“压”在一起，远处的车队像贴在近处的人背后。拥挤、压迫、海市蜃楼般的质感。"><figcaption><b>长焦</b>视野窄，前后的东西被“压”在一起，远处的车队像贴在近处的人背后。拥挤、压迫、海市蜃楼般的质感。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+</div>
+
+<div class="tw"><table>
+<tr><th></th><th>广角 <small>wide lens</small></th><th>长焦 <small>telephoto</small></th></tr>
+<tr><td>视野</td><td>宽，装得下很多东西</td><td>窄，只取一小块</td></tr>
+<tr><td>空间感</td><td>夸张纵深，前后距离被拉大</td><td>压缩纵深，前后贴在一起</td></tr>
+<tr><td>离人近时</td><td>脸会变形，有冲击力和喜感</td><td>脸型自然好看，所以人像多用它</td></tr>
+<tr><td>感觉</td><td>身临其境、动感、有时显得廉价（手机默认就是广角）</td><td>旁观、精致、有距离</td></tr>
+</table></div>
+
+<h3 id="s11">浅景深和深景深</h3>
+
+<p><span class="term">景深<small>depth of field</small></span>是画面里清楚的范围有多“厚”。浅景深就是只有主体清楚、前后都糊掉，也就是常说的“背景虚化”。深景深是从近到远全都清楚。</p>
+
+<figure><img loading="lazy" src="assets/img/dof-shallow.jpg" alt="浅景深焦点只在这张脸上，背景化成一片暖色。虚化把杂乱的环境抹掉，观众只能看他。这是“电影感”最容易辨认的特征之一。"><figcaption><b>浅景深</b>焦点只在这张脸上，背景化成一片暖色。虚化把杂乱的环境抹掉，观众只能看他。这是“电影感”最容易辨认的特征之一。<span class="src">《爆裂鼓手》(2014)</span></figcaption></figure>
+
+<figure><img loading="lazy" src="assets/img/dof-deep.jpg" alt="深景深前景的母亲、中景的两个男人、窗外雪地里的孩子，三层全部清楚。屋里的人在决定窗外那个孩子的命运，而他还在玩雪。导演让你自己在三层之间来回看。"><figcaption><b>深景深</b>前景的母亲、中景的两个男人、窗外雪地里的孩子，三层全部清楚。屋里的人在决定窗外那个孩子的命运，而他还在玩雪。导演让你自己在三层之间来回看。<span class="src">《公民凯恩》(1941)，导演 奥逊·威尔斯，摄影 格雷格·托兰</span></figcaption></figure>
+
+<p>浅景深的作用是替观众做选择：只有一个东西是清楚的，眼睛就没有别的地方可去。深景深则把选择权交给观众，适合画面里有多层信息同时发生的时候，比如前景一个人在说话、远处另一个人在偷听。</p>
+
+<p>在没有实拍的动效画面里，这个原理照样能用：想突出一个元素，就把其他元素调暗、调模糊、调小。行内叫“压背景”。它比给重点元素加描边、加发光要高级得多，因为你是在做减法。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>把重点突出一下。</div></div><div class="row yes"><span>这么说</span><div>讲到第三张卡片的时候，其余四张降到 30% 不透明度并加 6 像素的模糊，第三张保持清晰并放大到 108%。这个变化用 0.3 秒完成。讲完后全部恢复。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s12">这一章的词，怎么组合起来说</h2>
+
+<p>描述一个静态画面，把三件事各说一句就够了：<strong>景别 + 角度 + 构图</strong>，再加上你想要的质地。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>开场镜头：大远景，平视，一个人站在画面正中偏下，上面三分之二都是天空。长焦的压缩感，背景的山贴得很近。人只是一个小剪影。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>采访镜头：近景，机位和眼睛平齐，人放在右侧三分线上，面朝左，左边留空用来放名字条。背景虚化，只看得出是一间办公室。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>产品镜头：顶拍，手机放在画面正中，周围是干净的浅色桌面，四周留白很大。只有手机屏幕是亮的。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<p>如果你用 AI 生成图片或视频素材，这些词可以原样写进提示词里，生成模型认得它们，而且比“好看的”“专业的”管用得多。</p>
+
+      <div class="pn"><a href="anatomy.html"><small>上一章</small><b>一条视频的解剖</b></a><a class="nx" href="light-color.html"><small>下一章</small><b>光与色</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>

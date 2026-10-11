@@ -1,0 +1,6 @@
+# 下载的原片、抽帧预览和取片脚本，体积大，不进仓库
+_work/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

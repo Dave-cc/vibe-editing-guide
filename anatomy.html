@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一条视频的解剖 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html" class="on"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html"><i>02</i>景别、角度与构图</a><a href="light-color.html"><i>03</i>光与色</a><a href="camera.html"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">开始</div>
+      <h1>一条视频的解剖</h1>
+      <p class="lede">在谈好不好看之前，先把一条视频拆开，看看它由哪些零件组成。这一章全是最基础的名词，但后面每一句对 AI 说的话都要用到它们。</p>
+      
+
+
+<h2 id="s1">时间：从一帧到一条片</h2>
+
+<p>视频是一串静止的图片快速播放。每一张图叫一<span class="term">帧<small>frame</small></span>。一秒钟放多少张，叫<span class="term">帧率<small>fps</small></span>。</p>
+
+<div class="tw"><table>
+<tr><th>帧率</th><th>看起来</th><th>常见在哪</th></tr>
+<tr><td>24</td><td>略带一点“不连贯”，动得快的地方有拖影。我们从小在电影院里习惯了，于是把它认作“电影感”</td><td>电影、剧集、追求质感的广告和短片</td></tr>
+<tr><td>25 / 30</td><td>比 24 顺一点，更像“现场”</td><td>电视、新闻、大多数短视频和口播</td></tr>
+<tr><td>50 / 60</td><td>非常顺滑，像透过窗户看真的东西</td><td>游戏录屏、体育、界面演示；也用来拍慢动作的原始素材</td></tr>
+</table></div>
+
+<p>帧率还是你说话的尺子。在 24 帧的片子里，“12 帧”就是半秒，“3 帧”是八分之一秒。动效和转场太短，用秒说不方便，行内习惯直接说帧数。你对 AI 说“闪白 4 帧”“标题提前 6 帧进”，它完全听得懂。拿不准的时候说毫秒也行，40 毫秒大约是一帧。</p>
+
+<p>往上数，时间的单位是这样一层套一层的：</p>
+
+<div class="tw"><table>
+<tr><th>单位</th><th>是什么</th><th>大概多长</th></tr>
+<tr><td><span class="term">镜头<small>shot</small></span></td><td>两次剪切之间连续的一段画面。剪辑的最小积木</td><td>短视频 1–4 秒，电影平均 3–8 秒，长的可以几分钟</td></tr>
+<tr><td><span class="term">场<small>scene</small></span></td><td>同一个时间、同一个地点发生的一件事，由若干镜头组成</td><td>几十秒到几分钟</td></tr>
+<tr><td><span class="term">段落<small>sequence</small></span></td><td>完成一个意思的一组场或一组镜头。讲解片里相当于“一个小节”</td><td>15 秒到几分钟</td></tr>
+<tr><td>全片</td><td>若干段落</td><td>—</td></tr>
+</table></div>
+
+<p>两个镜头之间的那个接缝叫<span class="term">剪切点<small>cut</small></span>，口语里就说“切”或“一刀”。一条一分钟的短视频通常有 20 到 40 刀。“这里切早了”“这一刀往后挪半秒”，说的都是它。</p>
+
+<p>要指出片子里的某个位置，用<span class="term">时间码<small>timecode</small></span>：<code>00:01:23</code> 是 1 分 23 秒，后面再跟一段的话（<code>00:01:23:12</code>）是那一秒里的第 12 帧。给 AI 反馈时带上时间码，是最省事的一个习惯。</p>
+
+<h2 id="s2">空间：画面有多大，什么形状</h2>
+
+<p><span class="term">分辨率<small>resolution</small></span>是画面的像素数。现在的底线是 1080p（1920×1080），讲究一点做 4K（3840×2160）。它只决定清不清楚，不决定好不好看。</p>
+
+<p><span class="term">画幅比<small>aspect ratio</small></span>是宽和高的比例。这是开工前必须定下来的第一件事，因为它决定了所有构图。点一下看同一个画面被不同的框裁成什么样：</p>
+
+<div data-demo="ratio" data-img="assets/img/ratio-base.jpg"></div>
+
+<p>竖屏平台还有一个坑叫<span class="term">安全区<small>safe area</small></span>。抖音、视频号这些 App 会在画面上盖一层界面：顶上是搜索栏，底下是标题和文案，右边是点赞评论一列按钮。大致来说，顶部约 12%、底部约 25%、右侧约 15% 的区域，别放必须被看到的字和脸。很多 AI 做的竖屏片子，字幕贴着底边放，发出去正好被文案盖住。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>做一个竖屏的。</div></div><div class="row yes"><span>这么说</span><div>画幅 9:16，1080×1920，30 帧。发抖音，所以顶部 12%、底部 25%、右侧 15% 是界面遮挡区，标题、字幕和人脸都不要放进去。字幕放在画面高度 68% 左右的位置。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s3">层：时间线长什么样</h2>
+
+<p>所有剪辑软件的核心都是同一个东西：一条从左到右的<span class="term">时间线<small>timeline</small></span>，上面叠着若干条<span class="term">轨道<small>track</small></span>。画面轨道像一摞透明胶片，上面的盖住下面的；声音轨道是同时响的。AI 写代码做片子时没有这个界面，但脑子里的结构是一样的。</p>
+
+<figure>
+<svg viewBox="0 0 760 300" style="width:100%;height:auto;font-family:var(--sans)" role="img" aria-label="时间线轨道示意">
+<style>.tk{fill:var(--bg-soft);stroke:var(--line)} .lb{font-size:12.5px;fill:var(--ink-2)} .cl{rx:5} .t1{fill:#C6613F} .t2{fill:#D9A066} .t3{fill:#6E8F7B} .t4{fill:#5E7FA8} .t5{fill:#8B7BA8} .t6{fill:#9A968A} .ct{font-size:11px;fill:#fff} .tm{font:11px var(--mono);fill:var(--ink-3)}</style>
+<g class="tm"><text x="112" y="16">0s</text><text x="232" y="16">5s</text><text x="352" y="16">10s</text><text x="472" y="16">15s</text><text x="592" y="16">20s</text><text x="712" y="16">25s</text></g>
+<g>
+<rect class="tk" x="110" y="26" width="640" height="30" rx="6"/><text class="lb" x="8" y="46">字幕 / 标题</text>
+<rect class="cl t5" x="112" y="30" width="70" height="22"/><rect class="cl t5" x="190" y="30" width="96" height="22"/><rect class="cl t5" x="294" y="30" width="60" height="22"/><rect class="cl t5" x="362" y="30" width="120" height="22"/><rect class="cl t5" x="490" y="30" width="86" height="22"/><rect class="cl t5" x="584" y="30" width="110" height="22"/>
+<rect class="tk" x="110" y="62" width="640" height="30" rx="6"/><text class="lb" x="8" y="82">图形 / 贴纸</text>
+<rect class="cl t3" x="250" y="66" width="80" height="22"/><text class="ct" x="258" y="81">箭头标注</text><rect class="cl t3" x="500" y="66" width="130" height="22"/><text class="ct" x="508" y="81">数据图表</text>
+<rect class="tk" x="110" y="98" width="640" height="30" rx="6"/><text class="lb" x="8" y="118">B-roll 补充画面</text>
+<rect class="cl t2" x="200" y="102" width="150" height="22"/><text class="ct" x="208" y="117">产品录屏</text><rect class="cl t2" x="440" y="102" width="200" height="22"/><text class="ct" x="448" y="117">新闻截图 → 实拍空镜</text>
+<rect class="tk" x="110" y="134" width="640" height="30" rx="6"/><text class="lb" x="8" y="154">A-roll 主画面</text>
+<rect class="cl t1" x="112" y="138" width="636" height="22"/><text class="ct" x="120" y="153">人对着镜头讲（口播）</text>
+</g>
+<line x1="110" y1="176" x2="750" y2="176" stroke="var(--line-2)" stroke-dasharray="3 4"/>
+<g>
+<rect class="tk" x="110" y="188" width="640" height="26" rx="6"/><text class="lb" x="8" y="206">人声</text><rect class="cl t1" x="112" y="192" width="636" height="18" opacity=".75"/>
+<rect class="tk" x="110" y="220" width="640" height="26" rx="6"/><text class="lb" x="8" y="238">音效</text>
+<rect class="cl t4" x="196" y="224" width="14" height="18"/><rect class="cl t4" x="248" y="224" width="10" height="18"/><rect class="cl t4" x="436" y="224" width="16" height="18"/><rect class="cl t4" x="498" y="224" width="10" height="18"/><rect class="cl t4" x="636" y="224" width="22" height="18"/>
+<rect class="tk" x="110" y="252" width="640" height="26" rx="6"/><text class="lb" x="8" y="270">音乐</text><rect class="cl t6" x="112" y="256" width="636" height="18"/>
+</g>
+<line x1="380" y1="22" x2="380" y2="284" stroke="var(--accent)" stroke-width="1.500"/><path d="M374 20h12l-6 8z" fill="var(--accent)"/>
+</svg>
+<figcaption>一条口播视频的时间线。上半是画面轨道，越靠上越在前面；下半是声音轨道。竖着的那条线是播放头，它扫到哪，你就看到、听到那一刻所有轨道叠在一起的结果。</figcaption>
+</figure>
+
+<h3 id="s4">A-roll 和 B-roll</h3>
+
+<p>这是口播和讲解类视频里最重要的一对概念，新手几乎都不知道。</p>
+
+<p><span class="term">A-roll<small>A-roll</small></span> 是主线：通常是一个人对着镜头说话，或者一条旁白。它负责把话讲完，单独拿出来，这条视频的内容是完整的。</p>
+
+<p><span class="term">B-roll<small>B-roll</small></span> 是盖在主线上面的补充画面：讲到产品时切到产品的录屏，讲到一条新闻时贴出新闻截图，讲到“很多人”时放一段街头空镜。声音还是 A-roll 的，画面换成了别的。</p>
+
+<p>为什么要有 B-roll？三个原因。第一，同一张脸看十秒以上人就开始走神，B-roll 给眼睛换东西看。第二，它是证据：你说“这个功能很快”，不如直接放一段它很快的录屏。第三，它能盖住 A-roll 上的剪切痕迹，口播里删掉一句废话，人会突然跳一下，上面盖一段 B-roll 就看不出来了。</p>
+
+<p>一条“只有人在讲”的视频和一条“有人讲、画面跟着换”的视频，差别就在 B-roll。你觉得别人的口播“信息量大”“不无聊”，多半是因为每隔三五秒就有一段 B-roll。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>口播太干了，丰富一下画面。</div></div><div class="row yes"><span>这么说</span><div>A-roll 保持口播不动。每讲到一个具体的东西（产品名、数字、新闻、操作步骤），就盖一段 3 到 5 秒的 B-roll 来对应它：产品用录屏，数字用大字，新闻用原始截图。连续露脸不要超过 8 秒。讲观点和情绪的那几句不要盖，让人看到脸。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h3 id="s5">素材的种类</h3>
+
+<p>B-roll 可以是什么？下面这张清单值得记一下，因为“画面丰富”本质上就是这些东西换着用。</p>
+
+<div class="tw"><table>
+<tr><th>素材</th><th>说明</th><th>AI 怎么弄到</th></tr>
+<tr><td>实拍</td><td>你自己拍的人、物、环境</td><td>你提供</td></tr>
+<tr><td>录屏</td><td>软件操作、网页浏览、手机界面</td><td>你提供，或它用浏览器自动录</td></tr>
+<tr><td>截图与档案</td><td>新闻标题、推文、论文页、老照片、历史影像。统称“实证素材”</td><td>它去搜、去截</td></tr>
+<tr><td>素材库 <small>stock</small></td><td>别人拍好的通用镜头：城市、自然、办公、手部特写</td><td>从免费或付费素材站下载</td></tr>
+<tr><td>图形动效 <small>motion graphics</small></td><td>画出来并让它动的东西：图表、图标、示意图、流程</td><td>它写代码生成，这是它最拿手的</td></tr>
+<tr><td>文字卡</td><td>整屏只有一句话或一个数字</td><td>它生成</td></tr>
+<tr><td>AI 生成的图和视频</td><td>插画、概念图、一段几秒的生成视频</td><td>它调生图、生视频模型</td></tr>
+</table></div>
+
+<h2 id="s6">关键帧：所有动画的原子</h2>
+
+<p>画面里任何东西要动，底层只有一种描述方式：<span class="term">关键帧<small>keyframe</small></span>。意思是“在这个时刻，它是这个样子；在那个时刻，它是那个样子”。中间怎么变过去，由软件或代码自动算出来。</p>
+
+<p>一个标题从屏幕下方滑上来，就是两个关键帧：第 0 帧，位置在下面 40 像素、透明度 0；第 12 帧，位置归位、透明度 100%。能打关键帧的东西叫<span class="term">属性<small>property</small></span>，常用的就这几个：</p>
+
+<div class="tw"><table>
+<tr><th>属性</th><th>变化起来是什么效果</th></tr>
+<tr><td>位置 <small>position</small></td><td>移动、滑入滑出</td></tr>
+<tr><td>缩放 <small>scale</small></td><td>放大缩小、弹出、推近</td></tr>
+<tr><td>旋转 <small>rotation</small></td><td>转动、摆动、翻转</td></tr>
+<tr><td>不透明度 <small>opacity</small></td><td>淡入淡出</td></tr>
+<tr><td>遮罩 / 裁切 <small>mask</small></td><td>被一条边逐渐“揭开”或“擦掉”</td></tr>
+<tr><td>路径 <small>path</small></td><td>线条被画出来，形状变成另一个形状</td></tr>
+<tr><td>模糊、颜色等效果参数</td><td>由虚到实、变色、发光</td></tr>
+</table></div>
+
+<p>两个关键帧之间“怎么变过去”有讲究：匀速地变，还是先快后慢地变，观感差别极大。这叫<span class="term">缓动<small>easing</small></span>，是动效好不好看的头号因素，<a href="motion.html">第 8 章</a>专门讲。</p>
+
+<p>你描述任何一个动效，其实就是在口述关键帧：<strong>谁，哪个属性，从多少到多少，用多久，怎么变</strong>。记住这个句式，后面会反复用。</p>
+
+<h2 id="s7">一条片子是怎么做完的</h2>
+
+<p>行业里做片子有固定的几道工序。你不需要会做，但需要知道名字，因为跟 AI 协作时最好也按这个顺序一道一道验收，而不是让它一口气做完再整体推翻。</p>
+
+<ol class="steps">
+<li><b>脚本与分镜</b>写清楚说什么（文案），以及每一句话对应什么画面（<span class="term">分镜<small>storyboard</small></span>）。分镜可以是画出来的草图，也可以只是一张表。</li>
+<li><b>定调</b>先做一两张静态的<span class="term">风格帧<small>style frame</small></span>：颜色、字体、版式长什么样。这一步过了再往下，不然后面全要返工。</li>
+<li><b>粗剪</b>（<span class="term">rough cut<small>rough cut</small></span>）把素材按顺序排到时间线上，对上旁白，不加任何效果。只看两件事：结构顺不顺，总时长对不对。</li>
+<li><b>精剪</b>（<span class="term">fine cut<small>fine cut</small></span>）逐个打磨剪切点，调整每个镜头的长短，加上转场和动效。</li>
+<li><b>包装</b>加字幕、标题、图形、片头片尾。</li>
+<li><b>调色与混音</b>统一全片的颜色；把人声、音乐、音效的音量摆平。</li>
+<li><b>导出</b>按平台要求的规格输出文件。</li>
+</ol>
+
+<div class="co tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2.2h5c.1-1 .5-1.700 1.100-2.200A6 6 0 0 0 12 3z"/></svg><div><p>改得越早越便宜。分镜阶段换一个镜头是改一行字，成片阶段换一个镜头可能要重做十几秒的动效和声音。所以让 AI 先给你分镜表，你点头了再让它做。</p></div></div>
+
+<h2 id="s8">导出的那些参数</h2>
+
+<p>这些词你迟早会在导出界面或 AI 的回复里碰到，知道是什么就行。</p>
+
+<div class="tw"><table>
+<tr><th>词</th><th>意思</th><th>不知道选什么就选</th></tr>
+<tr><td>封装格式 <small>container</small></td><td>文件的“盒子”，就是扩展名</td><td>MP4</td></tr>
+<tr><td>编码 <small>codec</small></td><td>压缩画面的算法</td><td>H.264，所有平台都认。H.265 文件更小但兼容性差一点</td></tr>
+<tr><td>码率 <small>bitrate</small></td><td>每秒用多少数据来存画面。太低会糊、会出色块</td><td>1080p 给 8–12 Mbps，4K 给 35–45 Mbps</td></tr>
+<tr><td>音频</td><td>—</td><td>AAC，48 kHz，立体声，192 kbps 以上</td></tr>
+<tr><td>响度 <small>loudness</small></td><td>整条片听起来有多响。单位 LUFS，数字越接近 0 越响</td><td>网络平台大多按 −14 LUFS 左右归一，照这个做</td></tr>
+</table></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>导出一下。</div></div><div class="row yes"><span>这么说</span><div>导出 MP4，H.264，1080×1920，30 帧，码率 10 Mbps 左右；音频 AAC 48 kHz，整体响度归一到 −14 LUFS，峰值不超过 −1 dB。导出后自己抽帧检查一遍：有没有黑帧、字幕有没有出安全区、结尾有没有被截断。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s9">开工前要交代的硬信息</h2>
+
+<p>把这一章的东西攒起来，就是每次开工前该告诉 AI 的那几行。它们不涉及任何审美，但少一项就可能整条重做。</p>
+
+<pre data-title="开工硬参数"><button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button>平台与画幅：抖音 / 9:16 / 1080×1920 / 30fps
+目标时长：60 秒以内（可以短，不要超）
+安全区：顶部 12%、底部 25%、右侧 15% 不放关键内容
+素材：/素材 文件夹里有 1 段口播原片、6 张产品截图、2 段录屏
+缺的素材：可以自己画图形动效；需要实拍空镜就去免费素材站找，找不到告诉我
+声音：口播原声保留；配一首不抢戏的音乐；关键动作配音效
+字幕：全程要，逐句出，中文，一行不超过 14 个字
+交付：先给分镜表让我确认，再做粗剪，最后出成片 MP4</pre>
+
+      <div class="pn"><a href="index.html"><small>上一章</small><b>这份手册怎么用</b></a><a class="nx" href="frame.html"><small>下一章</small><b>景别、角度与构图</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>

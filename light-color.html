@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>光与色 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html"><i>02</i>景别、角度与构图</a><a href="light-color.html" class="on"><i>03</i>光与色</a><a href="camera.html"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">镜头语言</div>
+      <h1>光与色</h1>
+      <p class="lede">景别和构图决定观众看哪里，光和颜色决定观众看的时候是什么心情。这一章先讲光的四个旋钮，再讲颜色怎么选、怎么调。</p>
+      
+
+
+<h2 id="s1">光：四个旋钮</h2>
+
+<p>你觉得一个画面“有质感”“高级”“像电影”，八成是因为光。光听起来专业，其实能调的只有四样：软硬、明暗比例、方向、颜色。学会这四个词，你就能说清九成的布光需求。即使片子里没有实拍，你用 AI 生成图片、让它渲染 3D 画面、甚至给一张卡片加阴影，用的也是这四个词。</p>
+
+<h3 id="s2">软和硬</h3>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/light-hard.jpg" alt="硬光光束边缘清晰，影子的轮廓锐利，明暗之间几乎没有过渡。戏剧性强，有力量，也冷酷。正午的太阳、聚光灯、手机闪光灯都是硬光。"><figcaption><b>硬光</b>光束边缘清晰，影子的轮廓锐利，明暗之间几乎没有过渡。戏剧性强，有力量，也冷酷。正午的太阳、聚光灯、手机闪光灯都是硬光。<span class="src">《公民凯恩》(1941)，导演 奥逊·威尔斯，摄影 格雷格·托兰</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/light-soft.jpg" alt="软光看不到明显的影子边缘，从亮到暗是缓缓过渡的。柔和、亲切、显皮肤好。阴天、窗边、柔光箱打出来的都是软光。"><figcaption><b>软光</b>看不到明显的影子边缘，从亮到暗是缓缓过渡的。柔和、亲切、显皮肤好。阴天、窗边、柔光箱打出来的都是软光。<span class="src">《布达佩斯大饭店》(2014)，摄影 罗伯特·约曼</span></figcaption></figure>
+</div>
+
+<p>判断软硬只看一个地方：<strong>影子的边缘</strong>。边缘像刀切的是硬光，边缘糊成一片的是软光。大多数“好看的人像”用软光，大多数“有戏剧张力的画面”用硬光。</p>
+
+<h3 id="s3">高调和低调</h3>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/light-highkey.jpg" alt="高调画面绝大部分是亮的，几乎没有深色阴影。轻盈、干净、乐观，也可以是空洞和不真实。广告、喜剧、情景剧、产品片常用。"><figcaption><b>高调</b>画面绝大部分是亮的，几乎没有深色阴影。轻盈、干净、乐观，也可以是空洞和不真实。广告、喜剧、情景剧、产品片常用。<span class="src">《布达佩斯大饭店》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/light-lowkey.jpg" alt="低调画面大部分沉在暗里，只有一小块被照亮。神秘、沉重、私密。注意眼窝是黑的：摄影师戈登·威利斯故意用顶光让你看不清教父一家的眼神。"><figcaption><b>低调</b>画面大部分沉在暗里，只有一小块被照亮。神秘、沉重、私密。注意眼窝是黑的：摄影师戈登·威利斯故意用顶光让你看不清教父一家的眼神。<span class="src">《教父》(1972)，导演 弗朗西斯·科波拉，摄影 戈登·威利斯</span></figcaption></figure>
+</div>
+
+<p>这里的“调”说的是亮和暗的比例，行内叫<span class="term">光比<small>contrast ratio</small></span>。亮部和暗部差得越多，反差越大，画面越“硬朗”“有戏”；差得越少，画面越“平”“柔”。短视频里常见的“平光”，就是脸上没有任何明暗变化，安全，但没有立体感。</p>
+
+<h3 id="s4">方向</h3>
+
+<p>光从哪个方向打到主体上，决定了脸和物体的立体感。记五个方向就够。</p>
+
+<div class="tw"><table>
+<tr><th>方向</th><th>看起来</th><th>感觉</th></tr>
+<tr><td>顺光 <small>front light</small></td><td>光从摄影机方向来，脸上没有影子</td><td>清楚、扁平、证件照。美颜直播的环形灯</td></tr>
+<tr><td>侧光 <small>side light</small></td><td>半边脸亮，半边脸暗</td><td>立体、有性格、有内心戏</td></tr>
+<tr><td>逆光 <small>backlight</small></td><td>光在主体背后，主体边缘有一圈亮边，正面偏暗</td><td>梦幻、神圣、剪影；把人从背景里“勾”出来</td></tr>
+<tr><td>顶光 <small>top light</small></td><td>光从正上方来，眼窝、鼻下、下巴都是影子</td><td>压抑、阴沉、审讯</td></tr>
+<tr><td>底光 <small>under light</small></td><td>光从下往上，影子反着长</td><td>诡异、恐怖。手电筒放下巴底下讲鬼故事</td></tr>
+</table></div>
+
+<div class="grid g3">
+<figure><img loading="lazy" src="assets/img/light-top.jpg" alt="顶光额头和鼻梁亮，眼睛陷在阴影里。"><figcaption><b>顶光</b>额头和鼻梁亮，眼睛陷在阴影里。<span class="src">《教父》(1972)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/light-rim.jpg" alt="轮廓光来自侧后方的光给脸和发髻描了一道亮边，人从昏暗的背景里浮出来。"><figcaption><b>轮廓光</b>来自侧后方的光给脸和发髻描了一道亮边，人从昏暗的背景里浮出来。<span class="src">《花样年华》(2000)，导演 王家卫，摄影 杜可风、李屏宾</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-thirds.jpg" alt="侧光光只照到半张脸，另一半融进黑暗。"><figcaption><b>侧光</b>光只照到半张脸，另一半融进黑暗。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+</div>
+
+<p>影视里最经典的布光叫<span class="term">三点布光<small>three-point lighting</small></span>：一盏<strong>主光</strong>在侧前方，负责照亮和塑形；一盏弱一些的<strong>辅光</strong>在另一侧，把主光造成的阴影提亮一点；一盏<strong>轮廓光</strong>在侧后方，给头发和肩膀描边，让人和背景分开。采访、口播、产品拍摄，基本都是这个结构的变体。</p>
+
+<h3 id="s5">画面里看得见的光源</h3>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/light-practical.jpg" alt="走廊顶上那盏灯既是道具，也是真正在照亮人物的光源。这种出现在画面里的灯叫实景光源（practical）。它让光“有来处”，观众会下意识地觉得真实。"><figcaption>走廊顶上那盏灯既是道具，也是真正在照亮人物的光源。这种出现在画面里的灯叫<b>实景光源</b>（practical）。它让光“有来处”，观众会下意识地觉得真实。<span class="src">《花样年华》(2000)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/light-window.jpg" alt="窗户和台灯，两个都看得见的光源。百叶窗把光切成一条一条，落在墙上成了图案。"><figcaption>窗户和台灯，两个都看得见的光源。百叶窗把光切成一条一条，落在墙上成了图案。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+</div>
+
+<figure><img loading="lazy" src="assets/img/light-fog.jpg" alt="空气里有雾、烟或灰尘的时候，光就有了形状：车灯的光柱、顶上那一排灯带都“看得见”了。这叫体积光，也是《银翼杀手 2049》那种氛围的主要来源。"><figcaption>空气里有雾、烟或灰尘的时候，光就有了形状：车灯的光柱、顶上那一排灯带都“看得见”了。这叫<b>体积光</b>，也是《银翼杀手 2049》那种氛围的主要来源。<span class="src">《银翼杀手 2049》(2017)，导演 丹尼斯·维伦纽瓦，摄影 罗杰·迪金斯</span></figcaption></figure>
+
+<h3 id="s6">怎么对 AI 说光</h3>
+
+<p>三种场合会用到。一是让它生成图片或视频素材，光的描述直接进提示词。二是让它从一堆素材里挑片，或者判断哪一条拍得好。三是做图形动效时，阴影、高光、发光这些“假的光”也要遵守同一套逻辑：全片的光从同一个方向来。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>生成一张有质感的人物照片。</div></div><div class="row yes"><span>这么说</span><div>生成一张人物近景。软的侧光从画面左边的窗户进来，右半边脸在阴影里但保留细节。背景比人物暗两档，侧后方有一道暖色的轮廓光勾出头发。整体低调、暖色，浅景深。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>卡片加点阴影，立体一些。</div></div><div class="row yes"><span>这么说</span><div>假设光从左上方来。所有卡片的投影都朝右下，偏移 6 像素、模糊 20 像素、黑色 12% 不透明度。卡片上沿加一条 1 像素的浅色高光。全片所有元素都用这同一个光向，不要有的朝左有的朝右。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s7">颜色：先认三个属性</h2>
+
+<p>任何一个颜色都可以用三个数来描述。调色、配色、挑颜色，动的都是这三个数。</p>
+
+<div class="tw"><table>
+<tr><th>属性</th><th>是什么</th><th>拧它会怎样</th></tr>
+<tr><td>色相 <small>hue</small></td><td>红、橙、黄、绿、青、蓝、紫，色环上的位置</td><td>决定“是什么颜色”。暖色（红橙黄）靠近、兴奋；冷色（青蓝）后退、冷静</td></tr>
+<tr><td>饱和度 <small>saturation</small></td><td>鲜艳程度。拉到最低就是灰色</td><td>高饱和：活泼、年轻、廉价都有可能。低饱和：克制、成熟、压抑</td></tr>
+<tr><td>明度 <small>lightness / value</small></td><td>亮还是暗</td><td>决定画面的轻重。人眼对明度差最敏感，所以字和底的明度一定要拉开</td></tr>
+</table></div>
+
+<p>一个马上能用的判断：新手和 AI 默认生成的画面，颜色往往是“高饱和、中等明度”的，也就是又艳又闷。把饱和度整体降两成，把明度的对比拉开（亮的更亮、暗的更暗），画面立刻会成熟一截。</p>
+
+<h2 id="s8">配色：一部片子只用几个颜色</h2>
+
+<p>好看的片子颜色都很少。下面每张图下面的色条，是从这一帧里直接提取出来的主要颜色。你会看到它们几乎都只在色环上占了很小的一段，或者只用了两段。</p>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/color-mono.jpg" alt="单色"><div class="swatches"><i style="background:#411401"></i><i style="background:#6f1901"></i><i style="background:#8a2403"></i><i style="background:#982a03"></i><i style="background:#b14604"></i><i style="background:#c55d06"></i></div><figcaption><b>单色</b>整个画面只有橙色的深浅变化。极端、纯粹，像另一个星球。<span class="src">《银翼杀手 2049》(2017)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-analog.jpg" alt="邻近色"><div class="swatches"><i style="background:#1f0d22"></i><i style="background:#281536"></i><i style="background:#441d65"></i><i style="background:#5b2d82"></i><i style="background:#52155d"></i><i style="background:#660a5b"></i></div><figcaption><b>邻近色</b>品红、紫、蓝，色环上挨着的三个颜色。和谐、沉浸，霓虹夜景的常用组合。<span class="src">《银翼杀手 2049》(2017)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/comp-center.jpg" alt="互补色"><div class="swatches"><i style="background:#38291c"></i><i style="background:#9b6e54"></i><i style="background:#a98d89"></i><i style="background:#d0c1c9"></i><i style="background:#e6e0f5"></i><i style="background:#f8f5fe"></i></div><figcaption><b>互补色</b>沙地的橙和天空的蓝紫，在色环上正好相对。互补色放在一起彼此都更显眼，这就是“青橙色调”的原理。<span class="src">《疯狂的麦克斯：狂暴之路》(2015)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-triad.jpg" alt="多色"><div class="swatches"><i style="background:#520c08"></i><i style="background:#1b203a"></i><i style="background:#4c3432"></i><i style="background:#4c5163"></i><i style="background:#5f657f"></i><i style="background:#908386"></i></div><figcaption><b>多个纯色</b>红、蓝、绿、黄四条裙子，背景统一成蓝。颜色多的时候，要让它们饱和度一致，并且有一个颜色当“底”。<span class="src">《爱乐之城》(2016)</span></figcaption></figure>
+</div>
+
+<div class="tw"><table>
+<tr><th>配色方式</th><th>怎么选</th><th>感觉</th><th>风险</th></tr>
+<tr><td>单色 <small>monochromatic</small></td><td>一个色相，只变深浅</td><td>统一、极简、风格强烈</td><td>容易单调，靠明暗对比撑</td></tr>
+<tr><td>邻近色 <small>analogous</small></td><td>色环上挨着的两三个</td><td>和谐、柔和</td><td>缺少焦点，需要一个明度很高的点</td></tr>
+<tr><td>互补色 <small>complementary</small></td><td>色环上相对的两个</td><td>对比强、主体突出</td><td>两个颜色面积一样大会打架。一个做大面积的底，一个做小面积的点</td></tr>
+<tr><td>中性色加一个强调色</td><td>黑白灰米，加一个鲜艳的颜色</td><td>干净、现代、重点明确</td><td>几乎没有。拿不准就用它</td></tr>
+</table></div>
+
+<p>最后一行是给你的默认答案。做讲解片、产品片，选一个接近白或接近黑的底色，一个和它对比足够的字色，再加<strong>一个</strong>强调色，只用在每一屏最重要的那个东西上。行内有个“60-30-10”的经验比例：六成底色，三成辅助色，一成强调色。</p>
+
+<h3 id="s9">颜色可以是一个导演的签名</h3>
+
+<p>有些导演光看颜色就认得出来，因为他们把配色当成了固定的规则。</p>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/color-wes2.jpg" alt="韦斯·安德森粉、紫、红，糖果一样的低明度对比。每部片有一套像甜点盒的色板，从建筑到制服都服从它。"><figcaption><b>韦斯·安德森</b>粉、紫、红，糖果一样的低明度对比。每部片有一套像甜点盒的色板，从建筑到制服都服从它。<span class="src">《布达佩斯大饭店》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-wes.jpg" alt="同一部片的电梯间：大红的墙，紫色的制服。颜色不写实，但全片自洽。"><figcaption>同一部片的电梯间：大红的墙，紫色的制服。颜色不写实，但全片自洽。<span class="src">《布达佩斯大饭店》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-wkw1.jpg" alt="王家卫便利店和鱼缸的荧光绿。现实里“难看”的混合光，被他用成了都市孤独的颜色。"><figcaption><b>王家卫</b>便利店和鱼缸的荧光绿。现实里“难看”的混合光，被他用成了都市孤独的颜色。<span class="src">《重庆森林》(1994)，摄影 杜可风、刘伟强</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-wkw3.jpg" alt="到了《花样年华》，换成暗红和墨绿，饱和很高但整体很暗，像被压住的情绪。"><figcaption>到了《花样年华》，换成暗红和墨绿，饱和很高但整体很暗，像被压住的情绪。<span class="src">《花样年华》(2000)</span></figcaption></figure>
+</div>
+
+<h3 id="s10">暖和冷</h3>
+
+<div class="grid g2">
+<figure><img loading="lazy" src="assets/img/color-warm.jpg" alt="全片浸在琥珀色里：舞台灯、铜镲、木地板。暖色把观众拉近，也让汗水和血更刺眼。"><figcaption>全片浸在琥珀色里：舞台灯、铜镲、木地板。暖色把观众拉近，也让汗水和血更刺眼。<span class="src">《爆裂鼓手》(2014)</span></figcaption></figure>
+<figure><img loading="lazy" src="assets/img/color-cold.jpg" alt="青绿色的草、灰白的烟、没有一点暖色。冷色让人后退半步，像隔着一层东西看。"><figcaption>青绿色的草、灰白的烟、没有一点暖色。冷色让人后退半步，像隔着一层东西看。<span class="src">《1917》(2019)</span></figcaption></figure>
+</div>
+
+<p><span class="term">色温<small>color temperature</small></span>是说光本身偏黄还是偏蓝。蜡烛、钨丝灯、夕阳偏暖（黄橙）；阴天、阴影里、荧光屏偏冷（蓝青）。一个很好用的手法是冷暖对比：背景冷、人物暖，人会像被一小团火照着一样突出来。上面《银翼杀手 2049》的雾里那两盏车灯，《疯狂的麦克斯》的蓝天黄沙，都是这个道理。</p>
+
+<h2 id="s11">调色：给整部片子一个“看法”</h2>
+
+<p>拍出来或生成出来的原始画面，颜色通常是“正确”但没有性格的。<span class="term">调色<small>color grading</small></span>是后期统一地改变全片颜色的过程，它决定这部片子是用什么“心情”看世界的。分两步：先<strong>校色</strong>（把每个镜头的曝光、白平衡调到一致、正常），再<strong>风格化</strong>（整体推向某种色调）。</p>
+
+<p>下面是同一帧画面，套上七种常见的调色方向。点着看，注意下面的说明里用了哪些词。</p>
+
+<div data-demo="grade" data-img="assets/img/grade-base.jpg"></div>
+<p style="font-size:12px;color:var(--ink-3);margin-top:-14px">原片：《爱乐之城》(2016) 开场。演示里的色调是用网页滤镜模拟的，只为示意方向。</p>
+
+<p>调色时能拧的旋钮，名字比较固定：</p>
+
+<div class="tw"><table>
+<tr><th>旋钮</th><th>管什么</th><th>常见说法</th></tr>
+<tr><td>曝光 / 亮度</td><td>整体亮暗</td><td>“整体压暗半档”“提亮一点”</td></tr>
+<tr><td>对比度</td><td>亮部和暗部拉开多少</td><td>“加对比，让画面更硬”“降对比，柔一点”</td></tr>
+<tr><td>高光 / 阴影 / 黑位</td><td>分别调最亮处、暗处、最黑处</td><td>“把高光压回来，窗外不要死白”“黑位抬起来一点，做褪色感”</td></tr>
+<tr><td>白平衡 / 色温</td><td>整体偏黄还是偏蓝</td><td>“色温往暖走一点”“校正偏绿”</td></tr>
+<tr><td>饱和度</td><td>整体鲜艳程度</td><td>“降两成饱和”“只提高肤色的饱和”</td></tr>
+<tr><td>分离色调 <small>split toning</small></td><td>给暗部和亮部分别染不同的颜色</td><td>“暗部偏青，高光偏橙”</td></tr>
+<tr><td>LUT</td><td>一个打包好的调色预设，一键套上去</td><td>“套一个柯达胶片的 LUT，强度 60%”</td></tr>
+<tr><td>暗角 <small>vignette</small></td><td>画面四角压暗</td><td>“加一点暗角，把视线收到中间”</td></tr>
+<tr><td>颗粒 <small>grain</small></td><td>叠一层胶片噪点</td><td>“加一层细的胶片颗粒，强度很轻”</td></tr>
+</table></div>
+
+<div class="co warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.800 19.500h18.400L12 4z"/><path d="M12 10v4.500M12 17v.3"/></svg><div><p>调色里有一条红线：<strong>肤色</strong>。不管整体色调多风格化，人的皮肤看起来要像皮肤。肤色发绿、发灰、发紫，观众会立刻觉得“病了”或“假”。给 AI 的调色要求后面加一句“保护肤色，肤色保持自然”。</p></div></div>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>调个电影感的色。</div></div><div class="row yes"><span>这么说</span><div>先把所有镜头的曝光和白平衡校到一致。然后整体风格：对比度略加，饱和度降 15%；暗部往青色偏一点，高光往暖橙偏一点；黑位略微抬起，不要有死黑。肤色保持自然。最后加很轻的暗角和细颗粒。调完把调色前后各截三帧并排给我看。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h3 id="s12">不同来源的素材怎么统一</h3>
+
+<p>混剪和讲解片常常把不同来源的素材放在一起：手机拍的、网上下的、AI 生成的、录屏的。它们的颜色、清晰度、质感全都不一样，接在一起会像拼盘。让 AI 做三件事就能统一大半：</p>
+
+<ol>
+<li>全部校到同一个曝光和白平衡基准。</li>
+<li>套同一个风格化调色，或者叠同一层很淡的颜色。</li>
+<li>叠同一层颗粒或纹理。颗粒像一层胶水，能把清晰度不同的素材粘成一体。</li>
+</ol>
+
+<p>还有一招更彻底：把所有外来素材都装进同一种“容器”里，比如统一的白边相纸、同一款手机外框、同一种撕纸边缘。容器统一了，里面的东西再杂，观众也觉得是一套。</p>
+
+<h2 id="s13">给图形和文字配色的四条规矩</h2>
+
+<p>做动效和图文画面时，颜色的问题比实拍更突出，因为每一个色值都是你（或 AI）选的。</p>
+
+<ul>
+<li><strong>不用纯黑和纯白。</strong>纯黑 #000 配纯白 #FFF 反差太硬，看久了累。黑用 #1A1A1A 一带，白用略带暖或带冷的 #F5F4F0 一带。</li>
+<li><strong>字和底的明度差要够。</strong>眯起眼睛看，字要仍然清楚地浮在底上。浅灰字压白底、深蓝字压黑底，是可读性的头号杀手。</li>
+<li><strong>强调色只有一个，并且省着用。</strong>它出现的地方就是在喊“看这里”。一屏喊三次，就没人听了。</li>
+<li><strong>颜色要有固定的意思。</strong>橙色代表“重点”，就全片都代表重点；绿色代表“正确”，红色代表“错误”，就不要拿红色去做装饰。</li>
+</ul>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>配色：底色 #F4F1E8（暖的米白），正文字 #2A2826（暖的深灰），次要文字 #7B7870。强调色只有一个，#C6613F，只用在每屏最重要的一个数字或一个圈上。不出现第四种彩色。所有截图素材统一加 2% 的暖色叠加和细颗粒，让它们看起来是同一套。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+      <div class="pn"><a href="frame.html"><small>上一章</small><b>景别、角度与构图</b></a><a class="nx" href="camera.html"><small>下一章</small><b>运镜</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>

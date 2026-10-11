@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>声音 · Vibe 剪辑入门</title>
+<meta name="description" content="Vibe 剪辑入门：不学剪辑软件，学会看片和描述，用一张嘴指挥 AI 剪视频。镜头语言、剪辑、动效、画风图鉴，加可直接复制的指令。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97757' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3 9.5h18M8 5l-2 4.5M13 5l-2 4.5M18 5l-2 4.5'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <button class="iconbtn" id="menuBtn" aria-label="目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M3 9.500h18M8 5l-2 4.500M13 5l-2 4.500M18 5l-2 4.500"/></svg>
+    Vibe 剪辑入门<small>用一张嘴指挥 AI 剪片</small>
+  </a>
+  <span class="sp"></span>
+  <a class="tl" href="recipes.html">效果菜谱</a>
+  <a class="tl" href="brief.html">对 AI 说话</a>
+  <a class="tl" href="glossary.html">术语速查</a>
+  <button class="iconbtn" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav"><h6>开始</h6><a href="index.html"><i>00</i>这份手册怎么用</a><a href="anatomy.html"><i>01</i>一条视频的解剖</a><h6>镜头语言</h6><a href="frame.html"><i>02</i>景别、角度与构图</a><a href="light-color.html"><i>03</i>光与色</a><a href="camera.html"><i>04</i>运镜</a><h6>剪辑</h6><a href="cut.html"><i>05</i>切点与连贯</a><a href="rhythm.html"><i>06</i>蒙太奇、节奏与转场</a><a href="sound.html" class="on"><i>07</i>声音</a><h6>动效</h6><a href="motion.html"><i>08</i>动效的底层规律</a><a href="type.html"><i>09</i>文字、图形与片头</a><a href="styles.html"><i>10</i>画风图鉴</a><h6>审美</h6><a href="directors.html"><i>11</i>向导演和频道学</a><a href="taste.html"><i>12</i>什么叫好</a><a href="structure.html"><i>13</i>排片</a><h6>落到嘴上</h6><a href="recipes.html"><i>14</i>效果菜谱</a><a href="brief.html"><i>15</i>对 AI 说话</a><a href="glossary.html"><i>16</i>术语速查</a><a href="sources.html"><i>17</i>片单与出处</a></nav>
+  <main>
+    <article class="doc" id="doc">
+      <div class="eyebrow">剪辑</div>
+      <h1>声音</h1>
+      <p class="lede">把一部恐怖片静音，它就不吓人了。声音占了观感的一半，却只拿到新手十分之一的注意力。这一章补上这一半。</p>
+      
+
+
+<h2 id="s1">四种声音，外加安静</h2>
+
+<p>一条片子的声音，拆开看只有四层。它们同时响着，各管各的事。</p>
+
+<div class="tw"><table>
+<tr><th>层</th><th>包括</th><th>它的任务</th></tr>
+<tr><td>人声</td><td>对白（画面里的人说话）；<span class="term">旁白<small>voice-over · VO</small></span>（画面外的声音在讲）；口播（人对着镜头讲）</td><td>传递信息。它是老大，其他声音都要给它让路</td></tr>
+<tr><td>音乐</td><td>配乐、背景音乐、歌</td><td>定情绪，定节奏，把零散的画面粘成一段</td></tr>
+<tr><td>音效 <small>SFX</small></td><td>具体动作的声音：关门、脚步、点击；以及设计出来的声音：嗖、叮、砰</td><td>让画面里的动作“落地”，引导注意力</td></tr>
+<tr><td>环境声 <small>ambience</small></td><td>背景里持续的声音：街道的车流、办公室的空调、森林的虫鸣、房间里的“空气声”</td><td>告诉观众在哪，让场景显得真实</td></tr>
+</table></div>
+
+<p>第五样是<strong>安静</strong>。完全的静音，或者只剩一点环境声。它不是“没有声音”，是声音设计里分量最重的一个选择，留到后面单独讲。</p>
+
+<figure><div class="vwrap"><video src="assets/video/sound-1917.mp4" poster="assets/video/sound-1917.jpg" controls playsinline preload="none"></video><span class="vtag">有声 · 点击播放</span></div><figcaption>戴上耳机听这二十秒，试着分出层次：最底下是持续的配乐，往上是越来越密的炮弹呼啸和爆炸（音效），士兵的喊叫和脚步（环境与拟音），以及主角自己的喘息。画面是一个不间断的镜头，情绪的起伏几乎全是声音推上去的。<span class="src">《1917》(2019)，配乐 托马斯·纽曼</span></figcaption></figure>
+
+<h3 id="s2">画内和画外</h3>
+
+<p>还有一个分法很有用：这个声音，片子里的人物听得到吗？</p>
+
+<ul>
+<li><span class="term">画内音<small>diegetic</small></span>：故事世界里真实存在的声音。人物说话、收音机里的歌、敲门声。</li>
+<li><span class="term">画外音<small>non-diegetic</small></span>：只有观众听得到的声音。配乐、旁白、设计出来的音效。</li>
+</ul>
+
+<p>上一章《教父》那一段，管风琴和神父的声音是教堂里的画内音，但它一直延续到了教堂之外的杀戮画面上，在那里变成了画外音。这种在两者之间滑动的处理，是声音设计里最有味道的手法之一。讲解片里也能用：先让观众听到键盘声，再切到正在打字的画面。</p>
+
+<h2 id="s3">声音和画面可以不同时切</h2>
+
+<p>新手剪片，画面和声音总是在同一帧一起切。专业的片子里，它们经常是错开的。这是让剪辑变“顺”的最大秘密，名字来自它们在时间线上的形状。</p>
+
+<figure>
+<svg viewBox="0 0 760 330" style="width:100%;height:auto;font-family:var(--sans)" role="img" aria-label="J cut 和 L cut 示意">
+<style>.lb{font-size:12.5px;fill:var(--ink-2)} .hd{font-size:13.5px;font-weight:650;fill:var(--ink)} .va{fill:#5E7FA8} .vb{fill:#C6613F} .aa{fill:#5E7FA8;opacity:.55} .ab{fill:#C6613F;opacity:.55} .ct{font-size:11.5px;fill:#fff} .nt{font-size:12px;fill:var(--ink-3)}</style>
+<text x="10" y="22" class="hd">同切（直切）</text>
+<text x="10" y="50" class="lb">画面</text><rect class="va" x="70" y="36" width="250" height="22" rx="4"/><rect class="vb" x="322" y="36" width="250" height="22" rx="4"/><text class="ct" x="80" y="51">镜头 A</text><text class="ct" x="332" y="51">镜头 B</text>
+<text x="10" y="78" class="lb">声音</text><rect class="aa" x="70" y="64" width="250" height="18" rx="4"/><rect class="ab" x="322" y="64" width="250" height="18" rx="4"/>
+<text x="586" y="62" class="nt">画面和声音在同一帧切换</text>
+
+<text x="10" y="128" class="hd">J cut：声音先到</text>
+<text x="10" y="156" class="lb">画面</text><rect class="va" x="70" y="142" width="250" height="22" rx="4"/><rect class="vb" x="322" y="142" width="250" height="22" rx="4"/>
+<text x="10" y="184" class="lb">声音</text><rect class="aa" x="70" y="170" width="190" height="18" rx="4"/><rect class="ab" x="262" y="170" width="310" height="18" rx="4"/>
+<path d="M262 168v-30h60" fill="none" stroke="var(--ink)" stroke-width="1.500" stroke-dasharray="3 3"/>
+<text x="586" y="160" class="nt">还在看 A，已经听到 B 了。</text><text x="586" y="178" class="nt">观众被声音“拉”进下一个镜头</text>
+
+<text x="10" y="234" class="hd">L cut：声音拖后</text>
+<text x="10" y="262" class="lb">画面</text><rect class="va" x="70" y="248" width="250" height="22" rx="4"/><rect class="vb" x="322" y="248" width="250" height="22" rx="4"/>
+<text x="10" y="290" class="lb">声音</text><rect class="aa" x="70" y="276" width="310" height="18" rx="4"/><rect class="ab" x="382" y="276" width="190" height="18" rx="4"/>
+<path d="M382 274v-30h-60" fill="none" stroke="var(--ink)" stroke-width="1.500" stroke-dasharray="3 3"/>
+<text x="586" y="266" class="nt">画面已经到 B，A 的声音还在。</text><text x="586" y="284" class="nt">常用来看“听的人”的反应</text>
+</svg>
+<figcaption>把画面和声音的接缝连起来看，声音先到的像字母 J，声音拖后的像字母 L。</figcaption>
+</figure>
+
+<p><span class="term">J cut<small>J cut</small></span>：下一个镜头的声音，提前半秒到一秒进来。你还在看这个人，已经听到了下一个场景的音乐或人声。它制造期待，并且把剪切点藏了起来，因为等画面切过去的时候，耳朵早已在那边了。几乎所有“顺滑”的场景切换都用了它。</p>
+
+<p><span class="term">L cut<small>L cut</small></span>：画面先切走，上一个镜头的声音继续。最常见的用法是对话：A 还在说，画面已经切到 B 在听。还有口播盖 B-roll，本质上也是 L cut：人声继续，画面换成了别的。</p>
+
+<p>这两个手法在行内合称<span class="term">错位剪辑<small>split edit</small></span>。让 AI 做的时候一句话就够。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>这两段之间衔接生硬。</div></div><div class="row yes"><span>这么说</span><div>段落切换的地方做 J cut：下一段的旁白提前 12 帧进来，压在上一段最后一个画面上；同时上一段的音乐尾巴拖后 1 秒再淡出，和下一段的音乐交叠。画面的切点不动。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s4">音效：让东西有重量</h2>
+
+<p>没有声音的动效是“飘”的。一张卡片滑进来，配上一声轻轻的“唰”，它立刻就像一张真的卡片；一个数字跳出来，配一声“叮”，观众的注意力会被准确地拉到那里。给画面里的动作配声音，是提升质感最划算的一步。</p>
+
+<p>音效有两个来源。一类是<strong>写实的</strong>：真实物体发出的声音，脚步、纸张、键盘、开关。在电影里这些声音大多是后期在录音棚里重新做的，这门手艺叫<span class="term">拟音<small>foley</small></span>。另一类是<strong>设计的</strong>：现实里不存在、专门为画面运动做的声音。下面这张表是设计类音效的常用词，它们在音效库里就是这么分类的，你照着名字要就行。</p>
+
+<div class="tw"><table>
+<tr><th>名字</th><th>听起来</th><th>配什么</th></tr>
+<tr><td>嗖 <small>whoosh / swoosh</small></td><td>一阵快速的风声</td><td>任何快速的移动：元素滑入、转场、甩镜。最常用</td></tr>
+<tr><td>上升音 <small>riser</small></td><td>音调或音量持续升高，越来越紧</td><td>高潮或揭晓之前的 1 到 4 秒蓄力</td></tr>
+<tr><td>撞击 <small>impact / hit</small></td><td>一声短促有力的“砰”</td><td>大标题落定、重拍、冲击性的画面出现。常紧跟在上升音后面</td></tr>
+<tr><td>低频下坠 <small>sub drop / boom</small></td><td>很低的“嗡”一声沉下去</td><td>沉重、严肃的时刻；慢动作开始</td></tr>
+<tr><td>啵 <small>pop</small></td><td>气泡破掉、瓶塞弹出</td><td>小元素弹出：图标、贴纸、气泡</td></tr>
+<tr><td>咔嗒 <small>click / tick</small></td><td>清脆的一小声</td><td>按钮、开关、逐条出现的列表、计数</td></tr>
+<tr><td>叮 <small>ding / chime</small></td><td>铃、三角铁</td><td>正确、完成、提示、亮点</td></tr>
+<tr><td>打字 <small>typing</small></td><td>键盘声</td><td>文字逐字出现</td></tr>
+<tr><td>快门 <small>shutter</small></td><td>相机“咔嚓”</td><td>截图、定格、照片贴上来</td></tr>
+<tr><td>纸张、笔迹</td><td>翻页、撕纸、铅笔划过</td><td>纸质风格的画面：贴纸、手写、划线</td></tr>
+<tr><td>故障 <small>glitch</small></td><td>电流、信号干扰</td><td>故障转场、出错、科技感</td></tr>
+<tr><td>倒放的镲 <small>reverse cymbal</small></td><td>“嘶——”由弱到强然后突然断掉</td><td>转场前的吸入感，接一个硬切</td></tr>
+<tr><td>磁带停转 <small>tape stop</small></td><td>音乐像被按住唱片一样降调停下</td><td>打断、冷场、喜剧性的“等一下”</td></tr>
+</table></div>
+
+<h3 id="s5">配音效的四条规矩</h3>
+
+<ul>
+<li><strong>同一类动作，永远用同一个声音。</strong>卡片贴上来是“啪”，那么每一张卡片贴上来都是同一个“啪”。声音和颜色、字体一样，是风格的一部分，要成套。</li>
+<li><strong>声音要落在动作“到位”的那一帧。</strong>不是开始动的时候，是落定的时候。早了晚了都会觉得不对。快速移动的“嗖”则应该跟着运动的全程。</li>
+<li><strong>音效要轻。</strong>刚好听得见就够了。它是让画面扎实的，不是让人注意到“这里有个音效”。</li>
+<li><strong>不是每个动作都要配。</strong>只配重要的。全都配，等于在观众耳边不停地敲。</li>
+</ul>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>加点音效。</div></div><div class="row yes"><span>这么说</span><div>音效方案：全片是纸质贴纸风格，所以用实物的声音，不用电子音。卡片和截图贴上来，统一用一声短的纸张“啪”，落在它停稳的那一帧；手写的圈和划线，配铅笔划纸的声音，跟着笔画的时长；段落转场的推移配一声轻的翻页；全片最重要的那个大数字落定时，用一声低沉的撞击。小元素的淡入不配音效。所有音效的音量比人声低 12 dB 左右。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s6">音乐</h2>
+
+<h3 id="s7">怎么描述你要的音乐</h3>
+
+<p>“来点轻松的音乐”和“高级一点”一样没法执行。音乐可以从五个维度说清楚：</p>
+
+<div class="tw"><table>
+<tr><th>维度</th><th>怎么说</th></tr>
+<tr><td>情绪</td><td>明亮、温暖、紧张、忧郁、俏皮、史诗、冷静。挑一到两个词</td></tr>
+<tr><td>速度</td><td>每分钟多少拍（<span class="term">BPM<small>BPM</small></span>）。70 到 90 是舒缓，100 到 120 是轻快，行走的速度，130 以上是有冲劲</td></tr>
+<tr><td>乐器</td><td>原声吉他、钢琴、弦乐、电子合成器、鼓机、爵士三重奏、Lo-fi。乐器基本决定了“气质”</td></tr>
+<tr><td>密度</td><td>稀疏（一两件乐器，留很多空）还是饱满（层层叠叠）。有旁白的片子要稀疏的</td></tr>
+<tr><td>有无人声</td><td>有歌词的歌会和旁白抢。讲解类一般用纯音乐</td></tr>
+</table></div>
+
+<p>还可以给一个参照：某部电影的配乐、某个频道常用的那类音乐。它比形容词准。</p>
+
+<h3 id="s8">音乐有结构，剪辑要跟着它</h3>
+
+<p>一首曲子不是从头到尾一个样的。它通常有<strong>前奏</strong>（安静地开始）、<strong>主段</strong>（稳定进行）、<strong>铺垫</strong>（越来越满、越来越紧）、<strong>高潮</strong>（最响最满的部分，电子乐里叫 drop）、<strong>尾奏</strong>（退下去）。好的剪辑会让片子的结构和音乐的结构重合：钩子对着前奏的第一个音，转折点对着铺垫的最高处，全片最重要的画面落在高潮的第一拍。</p>
+
+<p>如果现成的音乐结构和你的片子对不上，可以剪音乐：截掉前奏，把某一段循环两遍，在需要的地方硬停。让 AI 做这件事时，告诉它你的片子在第几秒需要音乐“起来”。</p>
+
+<h3 id="s9">音乐怎么进、怎么出</h3>
+
+<div class="tw"><table>
+<tr><th>方式</th><th>效果</th></tr>
+<tr><td>淡入 <small>fade in</small></td><td>不知不觉地出现。温和，但开头没有力量</td></tr>
+<tr><td>硬进</td><td>第一帧就是满音量。有冲击力，短视频开头首选</td></tr>
+<tr><td>淡出 <small>fade out</small></td><td>慢慢消失。平稳的结束，稍显敷衍</td></tr>
+<tr><td>落在结束音上</td><td>把音乐剪到正好在最后一个画面处奏完最后一个音。最完整</td></tr>
+<tr><td>骤停</td><td>音乐突然断掉。强调、转折、喜剧</td></tr>
+<tr><td>闷掉 <small>low-pass / muffled</small></td><td>音乐像隔了一堵墙，只剩低频。表示进入内心、水下、回忆，或者单纯给一段旁白让路</td></tr>
+</table></div>
+
+<h2 id="s10">混音：谁大谁小</h2>
+
+<p><span class="term">混音<small>mixing</small></span>是调整各层声音的音量和质感，让它们互不打架。原则只有一条：<strong>人声永远清楚</strong>。在这之下，有几个具体的做法。</p>
+
+<h3 id="s11">音量的大致关系</h3>
+
+<div class="tw"><table>
+<tr><th>层</th><th>相对音量</th></tr>
+<tr><td>人声</td><td>最响，作为基准</td></tr>
+<tr><td>音乐（有人说话时）</td><td>比人声低 15 到 20 dB。你应该“感觉到”它，而不是“听见”它</td></tr>
+<tr><td>音乐（没人说话时）</td><td>可以升上来，比人声基准低 3 到 6 dB</td></tr>
+<tr><td>音效</td><td>比人声低 8 到 15 dB，冲击类的可以更接近人声</td></tr>
+<tr><td>环境声</td><td>很低，比人声低 20 dB 以上，若有若无</td></tr>
+</table></div>
+
+<p>dB（分贝）是音量的单位，每降 6 dB 听起来大约轻一半。你不用记数字，记住比例关系，然后用耳朵检查：闭上眼听一遍，有没有哪个字听不清。</p>
+
+<h3 id="s12">闪避</h3>
+
+<p><span class="term">闪避<small>ducking</small></span>：有人说话的时候，音乐自动压低；人一停，音乐自动升回来。所有播客、Vlog、解说都在用。它让音乐在停顿处填满空间，又不会盖住任何一个字。压低和回升都要有一个 0.2 到 0.5 秒的过渡，不然会听出“抽吸”的感觉。</p>
+
+<h3 id="s13">给人声让出位置</h3>
+
+<p>音乐盖住人声，不全是音量的问题。人说话的清晰度主要集中在一段中高频里，如果音乐在这一段也很满（比如有明亮的吉他、人声合唱），即使音量低也会让话听不清。专业的做法是在音乐上把这一段频率削掉一些，叫<span class="term">均衡<small>EQ</small></span>。你不用自己会调，但可以这样要求：</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row no"><span>别这么说</span><div>音乐声音小一点。</div></div><div class="row yes"><span>这么说</span><div>混音：以人声为基准。音乐做闪避，有人说话时压到比人声低 18 dB，停顿超过 0.6 秒时在 0.3 秒内升到比人声低 6 dB。音乐在 2 到 5 kHz 的中高频削掉 3 到 4 dB，给人声让位。人声本身做降噪，去掉房间的回声和底噪，并压缩一下动态让音量稳定。成片整体响度归一到 −14 LUFS 左右。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h3 id="s14">人声本身</h3>
+
+<p>口播和旁白的录音质量，对成片观感的影响比画质更大。观众能忍受模糊的画面，忍不了听不清或者刺耳的声音。常见的问题和说法：</p>
+
+<div class="tw"><table>
+<tr><th>问题</th><th>听起来</th><th>让 AI 做什么</th></tr>
+<tr><td>底噪</td><td>一直有“嘶嘶”声或电流声</td><td>降噪</td></tr>
+<tr><td>混响</td><td>像在空房间或浴室里说话</td><td>去混响</td></tr>
+<tr><td>忽大忽小</td><td>有的字很响，有的字听不见</td><td>压缩、音量标准化</td></tr>
+<tr><td>喷麦、齿音</td><td>“p”“b”爆破声很重；“s”很刺</td><td>去喷麦、去齿音</td></tr>
+<tr><td>闷</td><td>像隔着一层布</td><td>提亮高频</td></tr>
+</table></div>
+
+<p>如果用 AI 合成配音，要交代的是：音色（年龄、性别、气质）、语速、停顿的位置、哪些词要重读、整体的情绪。合成语音最大的毛病是匀速和没有停顿，所以断句和留气口要明确写出来。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>配音：年轻男声，语气像在跟朋友聊天，不要播音腔。语速中等偏快，每秒 5 个字左右。每句话之间留 0.3 秒，段落之间留 0.6 秒。“三倍”“不是人手”这两处重读并在前面停一下。生成后把每个字的时间点给我，字幕和动效要按它来对。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s15">安静</h2>
+
+<p>声音设计里最有力的一招，是把声音拿掉。</p>
+
+<p>一段满满的音乐和音效之后，突然全部停掉，只留一个人的呼吸声，或者什么都不留。这半秒到两秒的安静，比任何音效都更能让观众坐直。因为人的耳朵对“变化”敏感，而从有到无是最大的变化。</p>
+
+<p>安静的常见用法：全片最重要的一句话之前，停半秒；一个笑点或反转之后，留一秒让它发酵；紧张的段落里抽掉音乐，只留环境声，反而更紧。《爆裂鼓手》结尾那段独奏之所以震撼，有一部分原因是中间有一处，鼓声几乎停了，只剩一下一下极慢的敲击，然后才重新加速。</p>
+
+<p>AI 默认会用音乐把整条片铺满，因为“有音乐更完整”。你需要明确地给安静留位置。</p>
+
+<div class="ai"><div class="hd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.500l1.900 5.800a3 3 0 0 0 1.900 1.900l5.700 1.800-5.700 1.900a3 3 0 0 0-1.900 1.900L12 21.500l-1.900-5.700a3 3 0 0 0-1.900-1.900L2.500 12l5.700-1.800a3 3 0 0 0 1.900-1.900L12 2.500z"/></svg>对 AI 这样说</div><div class="row yes"><span>这么说</span><div>0:38 说到“但是”之前，所有声音在 4 帧内切到静音，只保留极轻的房间环境声，持续 0.8 秒。“但是”两个字出来的同时，音乐从下一个乐句的第一拍硬进。<button class="copy" title="复制" aria-label="复制"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></button></div></div></div>
+
+<h2 id="s16">声音的检查清单</h2>
+
+<ul class="check">
+<li>闭着眼听一遍，每个字都听得清吗？</li>
+<li>音乐有没有起伏，还是从头到尾一个样？</li>
+<li>重要的画面动作有没有对应的声音？同类动作的声音一致吗？</li>
+<li>段落切换的地方，声音有没有提前或拖后，还是和画面一起硬切？</li>
+<li>有没有至少一处安静？</li>
+<li>开头的第一秒有声音吗？结尾的音乐是落在结束音上，还是被一刀切断？</li>
+<li>在手机外放上听一遍。低频会消失，人声和中频的问题会暴露出来。</li>
+</ul>
+
+      <div class="pn"><a href="rhythm.html"><small>上一章</small><b>蒙太奇、节奏与转场</b></a><a class="nx" href="motion.html"><small>下一章</small><b>动效的底层规律</b></a></div>
+      <p class="foot">片例截图与片段仅用于学习与评述，版权归原作者与出品方所有，出处见<a href="sources.html">片单与出处</a>。</p>
+    </article>
+  </main>
+  <aside class="toc" id="toc"></aside>
+</div>
+<script src="assets/site.js"></script>
+<script src="assets/recipes.js"></script>
+</body>
+</html>
