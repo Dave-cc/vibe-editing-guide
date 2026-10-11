@@ -218,3 +218,7 @@ details>div{padding:0 16px 14px 33px;font-size:15px}
 .rxp u{text-decoration:none;color:#E9A07F}
 @media (max-width:1180px){.rxg{margin-left:0;margin-right:0}}
 @media (max-width:860px){.rxg{grid-template-columns:1fr}}
+
+/* 演示舞台的质感：颗粒和暗角 */
+.demo .stage::after,.rxs::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 100% at 50% 50%,transparent 60%,rgba(0,0,0,.28) 100%);z-index:5}
+.rxs{border-bottom:1px solid var(--line)}

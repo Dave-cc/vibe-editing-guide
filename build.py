@@ -11,7 +11,7 @@ NAV = [
     ('剪辑', [('cut', '切点与连贯'), ('rhythm', '蒙太奇、节奏与转场'), ('sound', '声音')]),
     ('动效', [('motion', '动效的底层规律'), ('type', '文字、图形与片头'), ('styles', '画风图鉴')]),
     ('审美', [('directors', '向导演和频道学'), ('taste', '什么叫好'), ('structure', '排片')]),
-    ('落到嘴上', [('recipes', '效果菜谱'), ('brief', '对 AI 说话'), ('glossary', '术语速查'), ('sources', '片单与出处')]),
+    ('落到嘴上', [('recipes', '一键动效 Prompt'), ('brief', '对 AI 说话'), ('glossary', '术语速查'), ('sources', '片单与出处')]),
 ]
 ORDER = [(k, t) for _, items in NAV for k, t in items]
 
